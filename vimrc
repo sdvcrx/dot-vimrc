@@ -8,6 +8,7 @@ filetype plugin indent on
 
 " enable syntax hightlight and completion
 syntax on
+inoremap jj <ESC>
 
 "--------
 " Vim UI
