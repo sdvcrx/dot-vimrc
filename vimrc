@@ -236,12 +236,17 @@ nnoremap ; :
 
 " for macvim
 if has("gui_running")
-    set go=aAce  " remove toolbar
+    set go=aAcem  " remove toolbar
+    color monokai
     "set transparency=30
-    set guifont=Monaco:h13
+    if has("gui_gtk2")
+        set guifont=YaHei\ Consolas\ Hybrid\ 11
+    elseif has("gui_win32")
+        set guifont=Consolas:h11:cANSI
+    endif
     set showtabline=2
-    set columns=140
-    set lines=40
+    set columns=93
+    set lines=21
     noremap <D-M-Left> :tabprevious<cr>
     noremap <D-M-Right> :tabnext<cr>
     map <D-1> 1gt
