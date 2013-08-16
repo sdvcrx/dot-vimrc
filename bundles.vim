@@ -58,6 +58,9 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
+"python
+Bundle 'hdima/python-syntax'
+
 "------- web backend ---------
 Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
@@ -82,7 +85,7 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-Bundle 'jnwhiteh/vim-golang'
+"Bundle 'jnwhiteh/vim-golang'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'

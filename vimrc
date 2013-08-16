@@ -6,8 +6,14 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
 
-" enable syntax hightlight and completion
+" enable syntax highlight and completion
 syntax on
+
+" python highlight
+let g:python_version_2=1
+let g:python_highlight_all=1
+
+" map jj to <ESC>
 inoremap jj <ESC>
 
 "--------
