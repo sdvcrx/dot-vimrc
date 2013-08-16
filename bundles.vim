@@ -15,6 +15,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/snipmate-snippets'
+Bundle 'MarcWeber/ultisnips'
 Bundle 'mattn/zencoding-vim'
 Bundle 'Raimondi/delimitMate'
 "------ snipmate dependencies -------
