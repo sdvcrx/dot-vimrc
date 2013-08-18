@@ -53,7 +53,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 "-------------
 " Other Utils
 "-------------
-Bundle 'humiaozuzu/fcitx-status'
+"Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
