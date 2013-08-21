@@ -56,7 +56,8 @@ set showcmd                                                       " show typed c
 set title                                                         " show file in titlebar
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
-set matchpairs+=<:>                                               " specially for html
+"set matchpairs+=<:>                                               " specially for html
+autocmd FileType setlocal matchpairs+=<:>
 " set relativenumber
 
 " Default Indentation
@@ -245,9 +246,10 @@ nnoremap ; :
 :command Qa qa
 :command QA qa
 
-" for macvim
+" for gvim
 if has("gui_running")
-    set go=aAcem  " remove toolbar
+    set go=aAce  " remove toolbar
+    " set go=aAcem
     color monokai
     "set transparency=30
     if has("gui_gtk2")
