@@ -1,4 +1,4 @@
-Maple's Vim config
+banbanchs's Vim config(forked from [humiaozuzu/dot-vimrc](https://github.com/humiaozuzu/dot-vimrc)
 ==================
 
 I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
@@ -7,6 +7,32 @@ I use `vundle` to manage my plugins, which makes my `.vim` directory clean and t
 * [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/)
 
 will be good for you.
+
+
+## Installation
+
+1. Backup your old vim configuration files:
+
+        mv ~/.vim ~/.vim.orig
+        mv ~/.vimrc ~/.vimrc.orig
+
+2. Clone and install this repo:
+
+        git clone git@bitbucket.org:banbanchs/dot-vimrc.git ~/.vim
+        ln -s ~/.vim/vimrc ~/.vimrc
+
+3. Setup `Vundle`:
+
+        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
+
+        :BundleInstall
+
+Thst's it!
+
+For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
+
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
@@ -24,6 +50,7 @@ Such as completions for variable names and function names(neocomplcache), expand
 * `Tab` -> Rotate across the completion list
 * `Tab` -> Expand snippets or jump to the next placeholder of snippet
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
+* `jj` -> map `jj` to `<esc>`
 
 ### Dependencies
 
@@ -31,7 +58,7 @@ Compile Vim with `--enable-pythoninterp` and `--enable-rubyinterp` to enable pow
 
 ``` bash
 brew install macvim --override-system-vim  # OS X
-yaourt -S gvim                             # ArchLinux
+sudo pacman -S gvim                        # ArchLinux
 sudo apt-get install vim-gtk               # Ubuntu
 ```
 
@@ -45,8 +72,8 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Screenshots
 
-![Completions](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/completions.gif)
-![Snippets](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/snippets.gif)
+![Completions](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/completions.gif)
+![Snippets](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/snippets.gif)
 
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
@@ -104,7 +131,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 ### Dependencie
 
 ```bash
-yaourt -S ack ctags                  # ArchLinux
+sudo pacman -S ack ctags             # ArchLinux
 sudo apt-get install ack-grep ctags  # Ubuntu
 brew install ack ctags               # OS X
 ```
@@ -149,12 +176,12 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 ### Screenshots
 
-![Vim IDE 1](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim.jpg)
-![Vim IDE 2](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim2.jpg)
+![Vim IDE 1](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/vim.jpg)
+![Vim IDE 2](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/vim2.jpg)
 
 ## Other Utils
 
-* [fcitx-status](https://github.com/humiaozuzu/fcitx-status) - automatic change status of fcitx in vim.
+* [fcitx-status](https://github.com/humiaozuzu/fcitx-status) - automatic change status of fcitx in vim.** (confict to map `jj`) **
 * [togglemouse](https://github.com/nvie/vim-togglemouse/) - Toggles the mouse focus between Vim and your terminal emulator, allowing terminal emulator mouse commands, like copy/paste.
 
 ### Shortcuts
@@ -185,7 +212,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
    - racket
    - clojure
    - scale
-  
+
 
 ## Themes
 
@@ -212,30 +239,6 @@ Clone in Mac
    * HTML/CSS - Use soft-tabs with a two space indent(According to Google and Github's HTML/CSS style guide, just Google it).
    * PHP - Use soft-tabs with a two space indent(According to [Apache PHP Style Guide](http://svn.apache.org/repos/asf/shindig/trunk/php/docs/style-guide.html)).
    * Python - Use soft-tabs with a four space indent([PEP8](http://www.python.org/dev/peps/pep-0008/)).
-
-## Installation
-
-1. Backup your old vim configuration files:
-
-        mv ~/.vim ~/.vim.orig
-        mv ~/.vimrc ~/.vimrc.orig
-
-2. Clone and install this repo:
-
-        git clone git@bitbucket.org:banbanchs/dot-vimrc.git ~/.vim
-        ln -s ~/.vim/vimrc ~/.vimrc
-
-3. Setup `Vundle`:
-
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
-
-        :BundleInstall
-
-Thst's it!
-
-For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
 
 ## How to manage this vimrc?
 
