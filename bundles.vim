@@ -12,13 +12,14 @@ Bundle 'gmarik/vundle'
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
-Bundle 'honza/vim-snippets'
-Bundle 'ervandew/supertab'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
+Bundle 'ervandew/supertab'
 " snipmate
-Bundle 'scrooloose/snipmate-snippets'
+"Bundle 'scrooloose/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'Shougo/neosnippet'
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
