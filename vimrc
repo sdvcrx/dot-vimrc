@@ -18,6 +18,12 @@ let g:python_highlight_string_templates=1
 let g:python_highlight_indent_errors=1
 let g:python_highlight_space_errors=1
 
+" python jedi
+let g:jedi#auto_vim_comfiguration = 1
+let g:jedi#completions_command = "<C-x>"
+let g:jedi#popup_on_dot = 0
+autocmd FileType python setlocal completeopt-=preview
+
 " map jj to <ESC>
 inoremap jj <ESC>
 
@@ -31,7 +37,7 @@ color vividchalk
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
-set cursorline cursorcolumn
+set cursorline "cursorcolumn
 
 " search
 set incsearch

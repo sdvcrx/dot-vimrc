@@ -16,10 +16,10 @@ Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
 " snipmate
-"Bundle 'scrooloose/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'Shougo/neosnippet'
+
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -63,6 +63,7 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "python
 Bundle 'hdima/python-syntax'
+Bundle 'davidhalter/jedi-vim'
 
 "------- web backend ---------
 "Bundle '2072/PHP-Indenting-for-VIm'

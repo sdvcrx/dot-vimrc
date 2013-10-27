@@ -37,12 +37,12 @@ For installation on Windows, please refer to this post: http://blog.yoxyue.com/p
 #### Most of the time we are writing code so we need:
 ## Code Completions
 
-Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(ZenCoding).
+Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(emmet).
 
 * [neocomplcache](http://github.com/Shougo/neocomplcache) - Ultimate auto completion system for Vim.
 * [snipMate](https://github.com/garbas/vim-snipmate) - Plugin for using TextMate-style snippets in Vim.
 * [supertab](http://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
-* [ZenCoding](http://github.com/mattn/zencoding-vim) - High speed HTML and CSS coding.
+* [emmet](http://github.com/mattn/emmet-vim) - High speed HTML and CSS coding.
 * [delimitMate](http://github.com/Raimondi/delimitMate) - Provides auto-balancing and some expansions for parens, quotes, etc.
 
 ### Shortcuts
@@ -65,10 +65,10 @@ sudo apt-get install vim-gtk               # Ubuntu
 ### Tutorial
 
 ``` vim
-:help zencoding
+:help emmet
 ```
 
-[Movie teaching zencoding.vim](http://mattn.github.com/zencoding-vim/)
+[Movie teaching.vim](http://mattn.github.com/emmet-vim/)
 
 ### Screenshots
 
@@ -127,6 +127,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 * [powerline](https://github.com/Lokaltog/vim-powerline) - The ultimate vim statusline utility.
 * [fugitive](https://github.com/tpope/vim-fugitive/) - a Git wrapper so awesome, it should be illegal.
 * [syntastic](https://github.com/scrooloose/syntastic) - Syntax checking hacks for vim.
+* [jedi](https://github.com/davidhalter/jedi-vim) - an awesome autocompletion library for Python
 
 ### Dependencie
 
@@ -134,6 +135,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 sudo pacman -S ack ctags             # ArchLinux
 sudo apt-get install ack-grep ctags  # Ubuntu
 brew install ack ctags               # OS X
+sudo pip install jedi                # Must has pip
 ```
 
 For syntax check tools:
