@@ -90,6 +90,23 @@ let g:html_indent_style1 = "inc"
 "-----------------
 " Plugin settings
 "-----------------
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_key_invoke_completion = '<S-n>' " still finding a good key map
+" disable diagnostics
+let g:ycm_max_diagnostics_to_display = 0
+" disable document
+set completeopt-=preview
+"autocmd FileType python setlocal completeopt-=preview
+
+" ultisnips
+let g:UltiSnipsExpandTrigger='<C-e>'
+let g:UltiSnipsJumpForwardTrigger='<C-j>'
+let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+
+
 " Rainbow parentheses for Lisp and variants
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -175,23 +192,10 @@ let g:user_emment_expandabbr_key='<C-j>'
 " powerline
 "let g:Powerline_symbols = 'fancy'
 
-"imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-"smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-"imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-"smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
-
 " For snippet_complete marker.
 if has('conceal')
     set conceallevel=2 concealcursor=i
 endif
-
-" Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS

@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/emmet-vim'
 "Bundle 'ervandew/supertab'
 "Bundle 'Shougo/neocomplcache'
@@ -21,9 +22,10 @@ Bundle 'jiangmiao/auto-pairs'
 "Bundle 'Raimondi/delimitMate'
 
 " snipmate
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'Shougo/neosnippet'
+Bundle 'SirVer/ultisnips'
+"Bundle 'honza/vim-snippets'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'Shougo/neosnippet'
 
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
