@@ -12,9 +12,13 @@ Bundle 'gmarik/vundle'
 " Code Completions
 "------------------
 Bundle 'mattn/emmet-vim'
-Bundle 'Raimondi/delimitMate'
 "Bundle 'ervandew/supertab'
 "Bundle 'Shougo/neocomplcache'
+
+" auto complete symbol
+Bundle 'jiangmiao/auto-pairs'
+"Bundle 'Townk/vim-autoclose'
+"Bundle 'Raimondi/delimitMate'
 
 " snipmate
 Bundle 'garbas/vim-snipmate'
