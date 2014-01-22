@@ -32,7 +32,9 @@ inoremap jj <ESC>
 "--------
 " color scheme
 set background=dark
-color vividchalk
+" color vividchalk
+color molokai
+let g:rehash256 = 1
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -235,6 +237,13 @@ let g:SuperTabRetainCompletionType=2
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
+" vimwiki
+"           \'syntax': 'markdown'
+let g:vimwiki_list = [{'path': '~/code/vimwiki',
+            \'path_html': '~/code/vimwiki_html',
+            \'template_path': '~/code/vimwiki/template',
+            \'template_default': "default.tpl"}]
+
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -289,7 +298,7 @@ nnoremap ; :
 if has("gui_running")
     set go=aAce  " remove toolbar
     " set go=aAcem
-    color monokai
+    color molokai
     "set transparency=30
     if has("gui_gtk2")
         set guifont=YaHei\ Consolas\ Hybrid\ 11

@@ -97,12 +97,16 @@ Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'vim-scripts/VimClojure'
 " Bundle 'rosstimson/scala-vim-support'
 
+"------- wiki -------
+Bundle 'vimwiki'
+
 "--------------
 " Color Schemes
 "--------------
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'rickharris/vim-monokai'
+Bundle 'tomasr/molokai'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
