@@ -18,12 +18,6 @@ let g:python_highlight_string_templates=1
 let g:python_highlight_indent_errors=1
 let g:python_highlight_space_errors=1
 
-" python jedi
-let g:jedi#auto_vim_comfiguration = 1
-let g:jedi#completions_command = "<C-x>"
-let g:jedi#popup_on_dot = 0
-autocmd FileType python setlocal completeopt-=preview
-
 " map jj to <ESC>
 inoremap jj <ESC>
 
@@ -181,16 +175,6 @@ let g:user_emment_expandabbr_key='<C-j>'
 " powerline
 "let g:Powerline_symbols = 'fancy'
 
-" NeoComplCache
-let g:neocomplcache_enable_at_startup=1
-let g:neoComplcache_disableautocomplete=1
-"let g:neocomplcache_enable_underbar_completion = 1
-"let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_smart_case=1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-set completeopt-=preview
-
 "imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
 "smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
 "imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
@@ -198,14 +182,6 @@ set completeopt-=preview
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
 
 " For snippet_complete marker.
 if has('conceal')
@@ -227,11 +203,6 @@ if !exists('g:neocomplcache_omni_patterns')
     let g:neocomplcache_omni_patterns = {}
 endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
-
-" SuperTab
-" let g:SuperTabDefultCompletionType='context'
-let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
-let g:SuperTabRetainCompletionType=2
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux

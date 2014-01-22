@@ -11,10 +11,11 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions
 "------------------
-Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
+"Bundle 'Shougo/neocomplcache'
+
 " snipmate
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
@@ -63,7 +64,7 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "python
 Bundle 'hdima/python-syntax'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
 
 "------- web backend ---------
 "Bundle '2072/PHP-Indenting-for-VIm'
