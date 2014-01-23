@@ -127,7 +127,12 @@ let g:rbpt_colorpairs = [
     \ ['red',         'firebrick3'],
     \ ]
 let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
 autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
+"au VimEnter * RainbowParenthesesToggle
+"au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
 
 " tabbar
 let g:Tb_MaxSize = 2
