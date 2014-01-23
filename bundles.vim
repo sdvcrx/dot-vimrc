@@ -75,7 +75,7 @@ Bundle 'hdima/python-syntax'
 "------- web backend ---------
 "Bundle '2072/PHP-Indenting-for-VIm'
 "Bundle 'tpope/vim-rails'
-Bundle 'lepture/vim-jinja'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 "Bundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
