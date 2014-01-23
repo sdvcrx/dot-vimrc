@@ -45,6 +45,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
+"Bundle 'vim-scripts/TaskList.vim'
 
 "--------------
 " IDE features
