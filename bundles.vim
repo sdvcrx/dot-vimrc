@@ -113,7 +113,6 @@ Bundle 'vimwiki'
 "--------------
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'rickharris/vim-monokai'
 Bundle 'tomasr/molokai'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
