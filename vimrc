@@ -96,7 +96,7 @@ let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_e
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_key_invoke_completion = '<C-l>'
 " disable diagnostics
-let g:ycm_max_diagnostics_to_display = 0
+"let g:ycm_max_diagnostics_to_display = 0
 " disable document
 set completeopt-=preview
 "autocmd FileType python setlocal completeopt-=preview
