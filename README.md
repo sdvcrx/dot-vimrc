@@ -39,16 +39,15 @@ For installation on Windows, please refer to this post: http://blog.yoxyue.com/p
 
 Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(emmet).
 
-* [neocomplcache](http://github.com/Shougo/neocomplcache) - Ultimate auto completion system for Vim.
-* [snipMate](https://github.com/garbas/vim-snipmate) - Plugin for using TextMate-style snippets in Vim.
-* [supertab](http://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - a fast, as-you-type, fuzzy-search code completion engine for Vim
+* [ultisnips](https://github.com/SirVer/ultisnips) - The ultimate snippet solution for Vim.
 * [emmet](http://github.com/mattn/emmet-vim) - High speed HTML and CSS coding.
-* [delimitMate](http://github.com/Raimondi/delimitMate) - Provides auto-balancing and some expansions for parens, quotes, etc.
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
 
 ### Shortcuts
 
-* `Tab` -> Rotate across the completion list
-* `Tab` -> Expand snippets or jump to the next placeholder of snippet
+* `Ctrl` + `l` -> Rotate across the completion list
+* `Ctrl` + `e` -> Expand snippets or jump to the next placeholder of snippet
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 * `jj` -> map `jj` to `<esc>`
 
@@ -122,20 +121,17 @@ sudo apt-get install vim-gtk               # Ubuntu
 * [nerdtree](http://github.com/scrooloose/nerdtree) - A tree explorer plugin for navigating the filesystem.
 * [tabbar](http://github.com/humiaozuzu/TabBar) -  Add tab bar and quickt tab switch with alt+1~9.
 * [tagbar](http://github.com/majutsushi/tagbar) - Displays the tags of the current file in a sidebar.
-* [ack-vim](http://github.com/mileszs/ack.vim) - Front for the Perl module App::Ack.
+* [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) - An ack/ag powered code search and view tool, in an intuitive way with fairly more context.
 * [ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
 * [powerline](https://github.com/Lokaltog/vim-powerline) - The ultimate vim statusline utility.
 * [fugitive](https://github.com/tpope/vim-fugitive/) - a Git wrapper so awesome, it should be illegal.
-* [syntastic](https://github.com/scrooloose/syntastic) - Syntax checking hacks for vim.
-* [jedi](https://github.com/davidhalter/jedi-vim) - an awesome autocompletion library for Python
 
 ### Dependencie
 
 ```bash
-sudo pacman -S ack ctags             # ArchLinux
-sudo apt-get install ack-grep ctags  # Ubuntu
-brew install ack ctags               # OS X
-sudo pip install jedi                # Must has pip
+sudo pacman -S the_silver_searcher ctags             # ArchLinux
+sudo apt-get install silversearcher-ag ctags        # Ubuntu
+brew install the_silver_searcher ctags               # OS X
 ```
 
 For syntax check tools:
@@ -174,7 +170,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * `Ctrl` + `p` -> Toggle ctrlp
 * `Alt` + `1~9` -> Switch between multiple buffers
 * `Ctrl` + `h/j/k/l` -> Moving between spilt windows
-* `:Ack` or `<leader>` + `a` -> Toggle Ack searching
+* `:CtrlSF` or `<leader>` + `a` -> Toggle CtrlSF searching
 
 ### Screenshots
 
