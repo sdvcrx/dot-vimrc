@@ -146,6 +146,9 @@ hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
 
+" ctrlsf
+let g:ctrlsf_ackprg = 'ag'
+
 " Tagbar
 let g:tagbar_left=1
 let g:tagbar_width=30
@@ -232,7 +235,7 @@ nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap  <D-/> :
-nnoremap <leader>a :Ack
+nnoremap <leader>a :CtrlSF 
 nnoremap <leader>v V`]
 
 "------------------
