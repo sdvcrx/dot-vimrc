@@ -13,19 +13,13 @@ Bundle 'gmarik/vundle'
 "------------------
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/emmet-vim'
-"Bundle 'ervandew/supertab'
-"Bundle 'Shougo/neocomplcache'
 
 " auto complete symbol
 Bundle 'jiangmiao/auto-pairs'
 "Bundle 'Townk/vim-autoclose'
-"Bundle 'Raimondi/delimitMate'
 
 " snipmate
 Bundle 'SirVer/ultisnips'
-"Bundle 'honza/vim-snippets'
-"Bundle 'garbas/vim-snipmate'
-"Bundle 'Shougo/neosnippet'
 
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -53,12 +47,10 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
-"Bundle 'mileszs/ack.vim'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 
 "-------------
@@ -72,7 +64,6 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "python
 Bundle 'hdima/python-syntax'
-"Bundle 'davidhalter/jedi-vim'
 
 "------- web backend ---------
 "Bundle '2072/PHP-Indenting-for-VIm'
@@ -83,9 +74,9 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'nono/jquery.vim'
+" Bundle 'pangloss/vim-javascript'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'nono/jquery.vim'
 " Bundle 'groenewege/vim-less'
 " Bundle 'wavded/vim-stylus'
 " Bundle 'nono/vim-handlebars'
@@ -107,7 +98,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'rosstimson/scala-vim-support'
 
 "------- wiki -------
-Bundle 'vimwiki'
+" Bundle 'vimwiki'
 
 "--------------
 " Color Schemes
