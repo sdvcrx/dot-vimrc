@@ -189,6 +189,9 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos = "right"
 
+" vim-nerdtree-tabs
+let g:nerdtree_tabs_open_on_gui_startup=1
+
 " nerdcommenter
 let NERDSpaceDelims=1
 " nmap <D-/> :NERDComToggleComment<cr>
