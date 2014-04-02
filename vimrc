@@ -190,7 +190,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeWinPos = "right"
 
 " vim-nerdtree-tabs
-let g:nerdtree_tabs_open_on_gui_startup=1
+let g:nerdtree_tabs_open_on_gui_startup=0
 
 " nerdcommenter
 let NERDSpaceDelims=1
