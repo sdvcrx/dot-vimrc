@@ -31,9 +31,9 @@ color molokai
 let g:rehash256 = 1
 
 " highlight current line
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
-set cursorline "cursorcolumn
+au WinLeave * set cursorline nocursorcolumn
+au WinEnter * set cursorline nocursorcolumn
+set cursorline nocursorcolumn
 
 " search
 set incsearch
