@@ -106,7 +106,6 @@ let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
-
 " Rainbow parentheses for Lisp and variants
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -197,7 +196,7 @@ let NERDSpaceDelims=1
 " nmap <D-/> :NERDComToggleComment<cr>
 let NERDCompactSexyComs=1
 
-" ZenCoding
+" emment
 let g:user_emment_expandabbr_key='<C-j>'
 
 " powerline
@@ -222,13 +221,6 @@ let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-
-" vimwiki
-"           \'syntax': 'markdown'
-let g:vimwiki_list = [{'path': '~/code/vimwiki',
-            \'path_html': '~/code/vimwiki_html',
-            \'template_path': '~/code/vimwiki/template',
-            \'template_default': "default.tpl"}]
 
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
