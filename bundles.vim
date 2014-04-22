@@ -20,6 +20,7 @@ Bundle 'jiangmiao/auto-pairs'
 
 " snipmate
 Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
