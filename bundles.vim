@@ -40,6 +40,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'vim-scripts/argtextobj.vim'
+Bundle 'gcmt/wildfire.vim'
 "Bundle 'vim-scripts/TaskList.vim'
 
 "--------------
