@@ -128,6 +128,7 @@ let g:rbpt_colorpairs = [
 let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
 autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
+autocmd Syntax lisp,scheme let g:AutoPairs={'(':')', '[':']', '{':'}', '"':'"'}
 "au VimEnter * RainbowParenthesesToggle
 "au Syntax * RainbowParenthesesLoadRound
 "au Syntax * RainbowParenthesesLoadSquare
