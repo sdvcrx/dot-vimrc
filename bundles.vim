@@ -31,6 +31,7 @@ Bundle 'tomtom/tlib_vim'
 "-----------------
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'pocke/accelerated-smooth-scroll'
 
 "--------------
 " Fast editing
@@ -61,6 +62,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Other Utils
 "-------------
 "Bundle 'humiaozuzu/fcitx-status'
+Bundle 'vim-scripts/fcitx.vim'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
