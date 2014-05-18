@@ -197,7 +197,9 @@ let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
 " emment
-let g:user_emment_expandabbr_key='<C-j>'
+let g:user_emmet_leader_key='<C-y>'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 " powerline
 "let g:Powerline_symbols = 'fancy'
