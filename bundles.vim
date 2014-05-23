@@ -80,10 +80,10 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 "------- web frontend ----------
 Bundle 'othree/html5.vim'
 " Bundle 'tpope/vim-haml'
-" Bundle 'pangloss/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 " Bundle 'kchmck/vim-coffee-script'
-" Bundle 'nono/jquery.vim'
-" Bundle 'groenewege/vim-less'
+Bundle 'nono/jquery.vim'
+Bundle 'groenewege/vim-less'
 " Bundle 'wavded/vim-stylus'
 " Bundle 'nono/vim-handlebars'
 
