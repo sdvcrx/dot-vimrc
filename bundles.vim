@@ -55,7 +55,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'bronson/vim-trailing-whitespace'
 
 "-------------
