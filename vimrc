@@ -9,6 +9,9 @@ filetype plugin indent on
 " enable syntax highlight and completion
 syntax on
 
+" fix syntax highlight off when one buffer quit
+set hidden
+
 " python highlight
 let g:python_version_2=1
 let g:python_highlight_builtins=1
