@@ -55,21 +55,21 @@ Bundle 'majutsushi/tagbar'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-powerline'
 Bundle 'bling/vim-airline'
 Bundle 'bronson/vim-trailing-whitespace'
+
 
 "-------------
 " Other Utils
 "-------------
-"Bundle 'humiaozuzu/fcitx-status'
 Bundle 'vim-scripts/fcitx.vim'
 Bundle 'nvie/vim-togglemouse'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
-"python
+
+"-------- python -----------
 Bundle 'hdima/python-syntax'
 
 "------- web backend ---------
