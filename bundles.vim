@@ -96,7 +96,7 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-"Bundle 'jnwhiteh/vim-golang'
+Bundle 'Blackrush/vim-gocode'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
