@@ -65,6 +65,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 "-------------
 Bundle 'vim-scripts/fcitx.vim'
 Bundle 'nvie/vim-togglemouse'
+Bundle 'szw/vim-ctrlspace'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
