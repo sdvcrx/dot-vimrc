@@ -98,11 +98,11 @@ let g:html_indent_style1 = "inc"
 let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 let g:ycm_key_invoke_completion = '<C-l>'
+let g:ycm_warning_symbol = '!!'
 " disable diagnostics
-"let g:ycm_max_diagnostics_to_display = 0
+let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
 set completeopt-=preview
-"autocmd FileType python setlocal completeopt-=preview
 
 " ultisnips
 let g:UltiSnipsExpandTrigger='<C-e>'
