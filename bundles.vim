@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 "------------------
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/emmet-vim'
+"Bundle 'davidhalter/jedi-vim'
 
 " auto complete symbol
 Bundle 'jiangmiao/auto-pairs'
@@ -96,7 +97,7 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-Bundle 'Blackrush/vim-gocode'
+"Bundle 'Blackrush/vim-gocode'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
