@@ -161,6 +161,9 @@ hi CtrlSpaceStatus   ctermfg=230  guifg=#ffffd7 ctermbg=234   guibg=#1c1c1c cter
 " ctrlspace require
 let g:airline_exclude_preview = 1
 
+" indentLine
+let g:indentLine_enabled = 0
+let g:indentLine_char = '⁚'
 
 " Tagbar
 let g:tagbar_left=1
@@ -248,7 +251,7 @@ set pastetoggle=<F2>
 nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
-nmap <F4> :IndentGuidesToggle<cr>
+nmap <F4> :IndentLinesToggle<cr>
 nmap  <D-/> :
 nnoremap <leader>a :CtrlSF 
 nnoremap <leader>v V`]
