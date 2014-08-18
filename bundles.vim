@@ -1,120 +1,138 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+if has('vim_starting')
+    set nocompatible               " be iMproved
+    set rtp+=~/.vim/bundle/neobundle.vim/
+endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-" let Vundle manage Vundle
+" let NeoNeoBundle manage NeoNeoBundle
 " required!
-Bundle 'gmarik/vundle'
+NeoBundle 'Shougo/neobundle.vim'
+
+" install/update asynchronously in Unite interface
+NeoBundle 'Shougo/vimproc.vim', {
+        \ 'build' : {
+        \     'windows' : 'tools\\update-dll-mingw',
+        \     'cygwin' : 'make -f make_cygwin.mak',
+        \     'mac' : 'make -f make_mac.mak',
+        \     'unix' : 'make -f make_unix.mak',
+        \    },
+        \ }
+
+
+
 
 "------------------
 " Code Completions
 "------------------
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'mattn/emmet-vim'
-"Bundle 'davidhalter/jedi-vim'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'mattn/emmet-vim'
+"NeoBundle 'davidhalter/jedi-vim'
 
 " auto complete symbol
-Bundle 'jiangmiao/auto-pairs'
-"Bundle 'Townk/vim-autoclose'
+NeoBundle 'jiangmiao/auto-pairs'
+"NeoBundle 'Townk/vim-autoclose'
 
 " snipmate
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
 
 "------ snipmate dependencies -------
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
 
 "-----------------
 " Fast navigation
 "-----------------
-Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'pocke/accelerated-smooth-scroll'
+NeoBundle 'edsono/vim-matchit'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'pocke/accelerated-smooth-scroll'
 
 "--------------
 " Fast editing
 "--------------
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'sjl/gundo.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'Yggdroot/indentLine'
-Bundle 'vim-scripts/argtextobj.vim'
-Bundle 'gcmt/wildfire.vim'
-"Bundle 'vim-scripts/TaskList.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'sjl/gundo.vim'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'vim-scripts/argtextobj.vim'
+NeoBundle 'gcmt/wildfire.vim'
+"NeoBundle 'vim-scripts/TaskList.vim'
 
 "--------------
 " IDE features
 "--------------
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'humiaozuzu/TabBar'
-Bundle 'majutsushi/tagbar'
-Bundle 'dyng/ctrlsf.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'humiaozuzu/TabBar'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'dyng/ctrlsf.vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'bronson/vim-trailing-whitespace'
 
 
 "-------------
 " Other Utils
 "-------------
-Bundle 'vim-scripts/fcitx.vim'
-Bundle 'nvie/vim-togglemouse'
-Bundle 'szw/vim-ctrlspace'
+NeoBundle 'vim-scripts/fcitx.vim'
+NeoBundle 'nvie/vim-togglemouse'
+NeoBundle 'szw/vim-ctrlspace'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
 
 "-------- python -----------
-Bundle 'hdima/python-syntax'
+NeoBundle 'hdima/python-syntax'
 
 "------- web backend ---------
-"Bundle '2072/PHP-Indenting-for-VIm'
-"Bundle 'tpope/vim-rails'
-Bundle 'Glench/Vim-Jinja2-Syntax'
-"Bundle 'digitaltoad/vim-jade'
+"NeoBundle '2072/PHP-Indenting-for-VIm'
+"NeoBundle 'tpope/vim-rails'
+NeoBundle 'Glench/Vim-Jinja2-Syntax'
+"NeoBundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
-Bundle 'othree/html5.vim'
-" Bundle 'tpope/vim-haml'
-Bundle 'pangloss/vim-javascript'
-" Bundle 'kchmck/vim-coffee-script'
-" Bundle 'nono/jquery.vim'
-" Bundle 'groenewege/vim-less'
-" Bundle 'wavded/vim-stylus'
-" Bundle 'nono/vim-handlebars'
+NeoBundle 'othree/html5.vim'
+" NeoBundle 'tpope/vim-haml'
+NeoBundle 'pangloss/vim-javascript'
+" NeoBundle 'kchmck/vim-coffee-script'
+" NeoBundle 'nono/jquery.vim'
+" NeoBundle 'groenewege/vim-less'
+" NeoBundle 'wavded/vim-stylus'
+" NeoBundle 'nono/vim-handlebars'
 
 "------- markup language -------
-Bundle 'tpope/vim-markdown'
-" Bundle 'timcharper/textile.vim'
+NeoBundle 'tpope/vim-markdown'
+" NeoBundle 'timcharper/textile.vim'
 
 "------- Ruby --------
-" Bundle 'tpope/vim-endwise'
+" NeoBundle 'tpope/vim-endwise'
 
 "------- Go ----------
-"Bundle 'Blackrush/vim-gocode'
+"NeoBundle 'Blackrush/vim-gocode'
 
 "------- FPs ------
-" Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'wlangstroth/vim-racket'
-" Bundle 'vim-scripts/VimClojure'
-" Bundle 'rosstimson/scala-vim-support'
+" NeoBundle 'kien/rainbow_parentheses.vim'
+" NeoBundle 'wlangstroth/vim-racket'
+" NeoBundle 'vim-scripts/VimClojure'
+" NeoBundle 'rosstimson/scala-vim-support'
 
 "--------------
 " Color Schemes
 "--------------
-Bundle 'rickharris/vim-blackboard'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tomasr/molokai'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'fisadev/fisa-vim-colorscheme'
+NeoBundle 'rickharris/vim-blackboard'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'tpope/vim-vividchalk'
+NeoBundle 'Lokaltog/vim-distinguished'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'fisadev/fisa-vim-colorscheme'
+
+
+call neobundle#end()
 
 filetype plugin indent on     " required!
+
