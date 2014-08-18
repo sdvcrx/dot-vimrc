@@ -7,7 +7,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " let NeoNeoBundle manage NeoNeoBundle
 " required!
-NeoBundle 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " install/update asynchronously in Unite interface
 NeoBundle 'Shougo/vimproc.vim', {
