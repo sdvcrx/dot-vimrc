@@ -5,7 +5,7 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" let NeoNeoBundle manage NeoNeoBundle
+" let NeoBundle manage NeoBundle
 " required!
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -97,7 +97,7 @@ NeoBundle 'Glench/Vim-Jinja2-Syntax'
 "------- web frontend ----------
 NeoBundle 'othree/html5.vim'
 " NeoBundle 'tpope/vim-haml'
-NeoBundle 'pangloss/vim-javascript'
+" NeoBundle 'pangloss/vim-javascript'
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'nono/jquery.vim'
 " NeoBundle 'groenewege/vim-less'
@@ -106,6 +106,7 @@ NeoBundle 'pangloss/vim-javascript'
 
 "------- markup language -------
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'Rykka/riv.vim'
 " NeoBundle 'timcharper/textile.vim'
 
 "------- Ruby --------
