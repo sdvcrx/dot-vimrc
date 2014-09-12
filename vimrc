@@ -219,6 +219,11 @@ let g:user_emmet_leader_key='<C-y>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,jinja EmmetInstall
 
+" riv
+let g:riv_auto_rst2html = 1
+let proj1 = { 'path': '~/Dropbox/Documents/rst/', }
+let g:riv_projects = [proj1]
+
 " powerline
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
