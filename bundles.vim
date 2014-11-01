@@ -58,6 +58,7 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'vim-scripts/argtextobj.vim'
 NeoBundle 'gcmt/wildfire.vim'
+NeoBundle 'terryma/vim-multiple-cursors'
 "NeoBundle 'vim-scripts/TaskList.vim'
 
 "--------------
@@ -72,6 +73,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'shougo/unite.vim'
 
 
 "-------------
