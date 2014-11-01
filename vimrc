@@ -104,6 +104,7 @@ let g:ycm_warning_symbol = '!!'
 let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
 set completeopt-=preview
+let g:syntastic_warning_symbol = '>'
 
 " ultisnips
 let g:UltiSnipsExpandTrigger='<C-e>'
@@ -133,6 +134,10 @@ hi CtrlSpaceSearch   ctermfg=220  guifg=#ffd700 ctermbg=NONE  guibg=NONE    cter
 hi CtrlSpaceStatus   ctermfg=230  guifg=#ffffd7 ctermbg=234   guibg=#1c1c1c cterm=NONE    gui=NONE
 " ctrlspace require
 let g:airline_exclude_preview = 1
+
+" man.vim
+source $VIMRUNTIME/ftplugin/man.vim
+nmap <Leader>man :Man 3 
 
 " indentLine
 let g:indentLine_enabled = 0
