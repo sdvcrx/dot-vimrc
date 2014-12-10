@@ -111,6 +111,11 @@ let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
+" flake8
+let g:flake8_cmd="/usr/bin/flake8-python2"
+let g:flake8_max_line_length=100
+let g:flake8_ignore="E501"
+
 " tabbar
 let g:Tb_MaxSize = 2
 let g:Tb_TabWrap = 1

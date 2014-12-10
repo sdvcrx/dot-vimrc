@@ -89,6 +89,7 @@ NeoBundle 'szw/vim-ctrlspace'
 
 "-------- python -----------
 NeoBundle 'hdima/python-syntax'
+NeoBundle 'nvie/vim-flake8'
 
 "------- web backend ---------
 "NeoBundle '2072/PHP-Indenting-for-VIm'
