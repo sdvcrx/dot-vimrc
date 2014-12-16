@@ -109,7 +109,7 @@ NeoBundle 'othree/html5.vim'
 
 "------- markup language -------
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'Rykka/riv.vim'
+" NeoBundle 'Rykka/riv.vim'
 " NeoBundle 'timcharper/textile.vim'
 
 "------- Ruby --------
@@ -134,6 +134,7 @@ NeoBundle 'tpope/vim-vividchalk'
 NeoBundle 'Lokaltog/vim-distinguished'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'fisadev/fisa-vim-colorscheme'
+NeoBundle 'szw/seoul256.vim'
 
 
 call neobundle#end()
