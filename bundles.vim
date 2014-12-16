@@ -66,7 +66,6 @@ NeoBundle 'terryma/vim-multiple-cursors'
 "--------------
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'humiaozuzu/TabBar'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'dyng/ctrlsf.vim'
 NeoBundle 'kien/ctrlp.vim'
