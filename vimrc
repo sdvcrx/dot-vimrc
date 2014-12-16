@@ -24,6 +24,9 @@ let g:python_highlight_space_errors=1
 " map jj to <ESC>
 inoremap jj <ESC>
 
+" map leader to comma
+let g:mapleader = ','
+
 "--------
 " Vim UI
 "--------
@@ -133,10 +136,10 @@ let g:ctrlsf_ackprg = 'ag'
 
 " CtrlSpace
 let g:ctrlspace_default_mapping_key = "<C-y>"
-hi CtrlSpaceSelected term=reverse ctermfg=187   guifg=#d7d7af ctermbg=23    guibg=#005f5f cterm=bold gui=bold
-hi CtrlSpaceNormal   term=NONE    ctermfg=244   guifg=#808080 ctermbg=232   guibg=#080808 cterm=NONE gui=NONE
-hi CtrlSpaceSearch   ctermfg=220  guifg=#ffd700 ctermbg=NONE  guibg=NONE    cterm=bold    gui=bold
-hi CtrlSpaceStatus   ctermfg=230  guifg=#ffffd7 ctermbg=234   guibg=#1c1c1c cterm=NONE    gui=NONE
+hi CtrlSpaceSelected term=reverse ctermfg=187  ctermbg=23  cterm=bold
+hi CtrlSpaceNormal   term=NONE    ctermfg=244  ctermbg=232 cterm=NONE
+hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
+hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
 " ctrlspace require
 let g:airline_exclude_preview = 1
 
