@@ -119,15 +119,6 @@ let g:flake8_cmd="/usr/bin/flake8-python2"
 let g:flake8_max_line_length=100
 let g:flake8_ignore="E501"
 
-" tabbar
-let g:Tb_MaxSize = 2
-let g:Tb_TabWrap = 1
-
-hi Tb_Normal guifg=white ctermfg=white
-hi Tb_Changed guifg=green ctermfg=green
-hi Tb_VisibleNormal ctermbg=252 ctermfg=235
-hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
-
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
 
@@ -205,11 +196,11 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css,jinja EmmetInstall
 
 " riv
-let g:riv_auto_rst2html = 1
-let proj1 = { 'path': '~/Dropbox/Documents/rst/', }
-let g:riv_projects = [proj1]
+" let g:riv_auto_rst2html = 1
+" let proj1 = { 'path': '~/Dropbox/Documents/rst/', }
+" let g:riv_projects = [proj1]
 
-" powerline
+" Airline
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
