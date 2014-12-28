@@ -29,20 +29,23 @@ will be good for you.
 
         :BundleInstall
 
-Thst's it!
+5. Compile YouCompleteMe:
 
-For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
+        cd ~/.vim/bundle/YouCompleteMe
+        ./install.sh --clang-completer
 
 
-#### Most of the time we are writing code so we need:
-## Code Completions
+
+#### Most of the time we are writing code so we need: ###
+## Code Completions ##
 
 Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(emmet).
 
-* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - a fast, as-you-type, fuzzy-search code completion engine for Vim
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - A fast, as-you-type, fuzzy-search code completion engine for Vim.
+* [tern](https://github.com/marijnh/tern_for_vim) - A Vim plugin that provides Tern-based JavaScript editing support.
 * [ultisnips](https://github.com/SirVer/ultisnips) - The ultimate snippet solution for Vim.
 * [emmet](http://github.com/mattn/emmet-vim) - High speed HTML and CSS coding.
-* [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
+* [delimitMate](https://github.com/Raimondi/delimitMate) - Provides insert mode auto-completion for quotes, parens, brackets, etc.
 
 ### Shortcuts
 
@@ -50,10 +53,11 @@ Such as completions for variable names and function names(neocomplcache), expand
 * `Ctrl` + `e` -> Expand snippets or jump to the next placeholder of snippet
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
 * `jj` -> map `jj` to `<esc>`
+* `<leader>` -> map `,` to `<leader>`
 
 ### Dependencies
 
-Compile Vim with `--enable-pythoninterp` and `--enable-rubyinterp` to enable powerful syntax completion supplied by neocomplcache.
+Compile Vim with `--enable-pythoninterp` and `--enable-rubyinterp` to enable powerful syntax completion supplied by YouCompleteMe.
 
 ``` bash
 brew install macvim --override-system-vim  # OS X
@@ -71,8 +75,8 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Screenshots
 
-![Completions](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/completions.gif)
-![Snippets](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/snippets.gif)
+![Completions]()
+![Snippets]()
 
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
@@ -119,27 +123,26 @@ sudo apt-get install vim-gtk               # Ubuntu
 ## IDE features
 
 * [nerdtree](http://github.com/scrooloose/nerdtree) - A tree explorer plugin for navigating the filesystem.
-* [tabbar](http://github.com/humiaozuzu/TabBar) -  Add tab bar and quickt tab switch with alt+1~9.
 * [tagbar](http://github.com/majutsushi/tagbar) - Displays the tags of the current file in a sidebar.
 * [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) - An ack/ag powered code search and view tool, in an intuitive way with fairly more context.
-* [ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
-* [powerline](https://github.com/Lokaltog/vim-powerline) - The ultimate vim statusline utility.
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
+* [airline](https://github.com/bling/vim-airline) - The ultimate vim statusline utility.
 * [fugitive](https://github.com/tpope/vim-fugitive/) - a Git wrapper so awesome, it should be illegal.
 
 ### Dependencie
 
 ```bash
-sudo pacman -S the_silver_searcher ctags             # ArchLinux
-sudo apt-get install silversearcher-ag ctags        # Ubuntu
-brew install the_silver_searcher ctags               # OS X
+sudo pacman -S the_silver_searcher cmake                # ArchLinux
+sudo apt-get install silversearcher-ag cmake python-dev # Ubuntu
+brew install the_silver_searcher ctags                  # OS X
 ```
 
 For syntax check tools:
 
 Languages    | Lint Tools    | Install guide
 ------------ | ------------- | ------------
-C            | gcc           | built-in
-CPP          | g++           | built-in
+C            | clang         | built-in
+CPP          | clang++       | built-in
 CoffeeScript | coffee        | `npm install -g coffeelint`
 CSS          | csslint       | `npm install -g csslint`
 Erlang       | escript       | built-in
@@ -167,19 +170,20 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 ### Shortcuts
 * `F5` -> Toggle Nerd-Tree file viewer
 * `F6` -> Toggle tagbar
+* `F8` -> Toggle syntastic
 * `Ctrl` + `p` -> Toggle ctrlp
 * `Alt` + `1~9` -> Switch between multiple buffers
 * `Ctrl` + `h/j/k/l` -> Moving between spilt windows
-* `:CtrlSF` or `<leader>` + `a` -> Toggle CtrlSF searching
+* `<leader>` + `a` -> Toggle CtrlSF searching
 
 ### Screenshots
 
-![Vim IDE 1](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/vim.jpg)
-![Vim IDE 2](https://bitbucket.org/banbanchs/dot-vimrc/raw/master/screenshots/vim2.jpg)
+![Vim IDE 1]()
+![Vim IDE 2]()
 
 ## Other Utils
 
-* [fcitx-status](https://github.com/humiaozuzu/fcitx-status) - automatic change status of fcitx in vim.** (confict to map `jj`) **
+* [fcitx.vim](https://github.com/vim-scripts/fcitx.vim) - keep and restore fcitx state when leaving/re-entering insert mode
 * [togglemouse](https://github.com/nvie/vim-togglemouse/) - Toggles the mouse focus between Vim and your terminal emulator, allowing terminal emulator mouse commands, like copy/paste.
 
 ### Shortcuts
@@ -198,7 +202,6 @@ YAML         | js-yaml       | `npm install -g js-yaml`
    - html5
    - haml
    - javascript
-   - jquery
    - coffeescript
    - less
    - stylus
@@ -206,6 +209,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 - Markup language
    - markdown
    - textile
+   - rst
 - FPs
    - racket
    - clojure
@@ -214,14 +218,14 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 ## Themes
 
-* [blackboard](https://github.com/rickharris/vim-blackboard) - Textmate's Blackboard theme for vim (with iTerm2 theme)
 * [molokai](https://github.com/rickharris/vim-monokai) - A port of the monokai scheme for TextMate
 * [solarized](https://github.com/altercation/vim-colors-solarized) - precision colorscheme for the vim text editor
+* [seoul](https://github.com/junegunn/seoul256.vim) -  A low-contrast Vim color scheme based on Seoul Colors
+* [blackboard](https://github.com/rickharris/vim-blackboard) - Textmate's Blackboard theme for vim (with iTerm2 theme)
 * [vividchalk](https://github.com/tpope/vim-vividchalk) - colorscheme based on the Vibrant Ink theme for TextMate
-* [distinguished](https://github.com/Lokaltog/vim-distinguished) - A dark vim color scheme for 256-color terminals.
+* [distinguished](https://github.com/Lokaltog/vim-distinguished) - A dark vim color scheme for 256-color terminals
 * [tomorrow](https://github.com/chriskempson/vim-tomorrow-theme) - Tomorrow Theme for Vim
-* [fisa](https://github.com/fisadev/fisa-vim-colorscheme) - soft color scheme for terminals with 256 colors
-Clone in Mac
+* [fisa](https://github.com/fisadev/fisa-vim-colorscheme) - soft color scheme for terminals with 256 colors clone in Mac
 
 ## Additional functions
 
@@ -242,14 +246,14 @@ Clone in Mac
 
 All plugins are listed in file `bundles.vim` with detailed comments, just add plugins as you like.
 
-1. `:BundleClean` to clean up unused plugins
-2. `:BundleInstall` to install newly added plugins
-3. `:BundleInstall!` to upgrade all plugins
+1. `:NeoBundleClean` to clean up unused plugins
+2. `:NeoBundleInstall` to install newly added plugins
+3. `:NeoBundleUpdate` to upgrade all plugins
+4. `:Unite neobundle/install` to install plugins asynchronously in Unite interface.
+5. `:Unite neobundle/update` to update plugins asynchronously in Unite interface.
 
 Other configurations are also well organized in vimrc.
 
 ## Known issues
 
-* Compeletions are not well supported for statically typed languages(c/c++)
-* Snippets are not shown in completions popups
 * May has some conflicts with GVIM
