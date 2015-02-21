@@ -204,7 +204,7 @@ autocmd FileType html,css,jinja EmmetInstall
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
-let g:airline_detect_whitespace=0
+let g:airline#extensions#whitespace#enabled = 0
 
 " For snippet_complete marker.
 if has('conceal')
