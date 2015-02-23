@@ -87,12 +87,6 @@ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 
-" syntax support
-autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
-" js
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
 
 "-----------------
 " Plugin settings
@@ -113,6 +107,10 @@ let g:syntastic_warning_symbol = '>'
 let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+
+" CoffeeScript
+autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
+let coffee_indent_keep_current = 1
 
 " flake8
 let g:flake8_cmd="/usr/bin/flake8-python2"
