@@ -134,7 +134,7 @@ NeoBundle 'tpope/vim-vividchalk'
 NeoBundle 'Lokaltog/vim-distinguished'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'fisadev/fisa-vim-colorscheme'
-NeoBundle 'szw/seoul256.vim'
+NeoBundle 'junegunn/seoul256.vim'
 
 
 call neobundle#end()
