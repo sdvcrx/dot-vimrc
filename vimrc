@@ -102,11 +102,20 @@ let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
 set completeopt-=preview
 let g:syntastic_warning_symbol = '>'
+let g:ycm_semantic_triggers =  {
+  \   'c' : ['->', '.'],
+  \   'cpp' : ['->', '.', '::'],
+  \   'javascript,coffee,python,go' : ['.'],
+  \   'vim' : ['re![_a-zA-Z]+[_\w]*\.'],
+  \}
 
 " ultisnips
 let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+
+" TernJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 
 " CoffeeScript
 autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
@@ -212,13 +221,6 @@ endif
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType c setlocal omnifunc=ccomplete#Complete
-if !exists('g:neocomplcache_omni_patterns')
-    let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux

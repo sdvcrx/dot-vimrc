@@ -27,6 +27,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 "------------------
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'marijnh/tern_for_vim'
 "NeoBundle 'davidhalter/jedi-vim'
 
 " auto complete symbol
