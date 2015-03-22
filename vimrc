@@ -33,7 +33,9 @@ let g:mapleader = ','
 " color scheme
 set background=dark
 " color vividchalk
-color molokai
+" color molokai
+let g:seoul256_background = 234
+color seoul256
 let g:rehash256 = 1
 
 " highlight current line
@@ -210,7 +212,8 @@ autocmd FileType html,css,jinja EmmetInstall
 " Airline
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
+let g:airline_theme='wombat'
 let g:airline#extensions#whitespace#enabled = 0
 
 " For snippet_complete marker.
@@ -281,7 +284,12 @@ nnoremap ; :
 if has("gui_running")
     set go=aAce  " remove toolbar
     " set go=aAcem
-    color molokai
+
+    " GVIM theme
+    color solarized
+    set bg=light
+    let g:airline_theme='solarized'
+
     "set transparency=30
     if has("gui_gtk2")
         set guifont=YaHei\ Consolas\ Hybrid\ 11
