@@ -109,7 +109,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'nono/vim-handlebars'
 
 "------- markup language -------
-NeoBundle 'tpope/vim-markdown'
+NeoBundle 'plasticboy/vim-markdown'
 " NeoBundle 'Rykka/riv.vim'
 " NeoBundle 'timcharper/textile.vim'
 

@@ -209,6 +209,10 @@ autocmd FileType html,css,jinja EmmetInstall
 " let proj1 = { 'path': '~/Dropbox/Documents/rst/', }
 " let g:riv_projects = [proj1]
 
+" markdown
+" Highlight YAML frontmatter as used by Jekyll
+let g:vim_markdown_frontmatter=1
+
 " Airline
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
