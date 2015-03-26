@@ -204,6 +204,9 @@ let g:user_emmet_leader_key='<C-y>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,jinja EmmetInstall
 
+" vim-pad
+let g:pad#dir = '~/.vim/notes'
+
 " riv
 " let g:riv_auto_rst2html = 1
 " let proj1 = { 'path': '~/Dropbox/Documents/rst/', }

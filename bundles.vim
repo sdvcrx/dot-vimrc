@@ -82,6 +82,7 @@ NeoBundle 'shougo/unite.vim'
 NeoBundle 'vim-scripts/fcitx.vim'
 NeoBundle 'nvie/vim-togglemouse'
 NeoBundle 'szw/vim-ctrlspace'
+NeoBundle 'fmoralesc/vim-pad'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
