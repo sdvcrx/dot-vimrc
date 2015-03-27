@@ -64,6 +64,8 @@ set number                                                        " show line nu
 set showmatch                                                     " show matching bracket (briefly jump)
 set showcmd                                                       " show typed command in status bar
 set title                                                         " show file in titlebar
+set visualbell                                                    " don't beep
+set noerrorbells                                                  " don't beep
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 "set matchpairs+=<:>                                               " specially for html
