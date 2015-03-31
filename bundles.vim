@@ -34,13 +34,9 @@ NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'jiangmiao/auto-pairs'
 "NeoBundle 'Townk/vim-autoclose'
 
-" snipmate
+" code snippets
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
-
-"------ snipmate dependencies -------
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'tomtom/tlib_vim'
 
 "-----------------
 " Fast navigation
