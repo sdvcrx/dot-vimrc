@@ -31,8 +31,8 @@ NeoBundle 'marijnh/tern_for_vim'
 "NeoBundle 'davidhalter/jedi-vim'
 
 " auto complete symbol
-NeoBundle 'jiangmiao/auto-pairs'
-"NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'Raimondi/delimitMate'
+"NeoBundle 'jiangmiao/auto-pairs'
 
 " code snippets
 NeoBundle 'SirVer/ultisnips'

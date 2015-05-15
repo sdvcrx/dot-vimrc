@@ -149,6 +149,10 @@ let g:airline_exclude_preview = 1
 source $VIMRUNTIME/ftplugin/man.vim
 nmap <Leader>man :Man 3 
 
+" delimitMate
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+
 " indentLine
 let g:indentLine_enabled = 0
 let g:indentLine_char = '⁚'
