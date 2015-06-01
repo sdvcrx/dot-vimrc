@@ -100,7 +100,8 @@ autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 tex
 let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 let g:ycm_key_invoke_completion = '<C-l>'
-let g:ycm_warning_symbol = '!!'
+let g:ycm_error_symbol = '✗'
+let g:ycm_warning_symbol = '⚠'
 " disable diagnostics
 let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
@@ -124,6 +125,16 @@ autocmd FileType javascript setlocal omnifunc=tern#Complete
 " CoffeeScript
 autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
 let coffee_indent_keep_current = 1
+
+" Syntastic
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_mode_map = {
+  \ "mode": "passive",
+  \ "active_filetypes": [],
+  \ "passive_filetypes": ["javascript"]
+  \}
 
 " flake8
 let g:flake8_cmd="/usr/bin/flake8-python2"
@@ -208,6 +219,7 @@ let NERDCompactSexyComs=1
 " emment
 let g:user_emmet_leader_key='<C-y>'
 let g:user_emmet_install_global = 0
+" let g:user_emmet_mode = 'iv'
 autocmd FileType html,css,jinja EmmetInstall
 
 " vim-pad
@@ -251,6 +263,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
+nmap <F8> :SyntasticCheck<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentLinesToggle<cr>
 nmap  <D-/> :

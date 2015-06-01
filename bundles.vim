@@ -61,6 +61,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'majutsushi/tagbar'
