@@ -66,9 +66,10 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'dyng/ctrlsf.vim'
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'FelikZ/ctrlp-py-matcher'
+" NeoBundle 'gabesoft/vim-ags'
+" NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'shougo/unite.vim'
@@ -88,13 +89,13 @@ NeoBundle 'fmoralesc/vim-pad'
 
 "-------- python -----------
 NeoBundle 'hdima/python-syntax'
-NeoBundle 'nvie/vim-flake8'
+" NeoBundle 'nvie/vim-flake8'
 
 "------- web backend ---------
 "NeoBundle '2072/PHP-Indenting-for-VIm'
 "NeoBundle 'tpope/vim-rails'
-NeoBundle 'Glench/Vim-Jinja2-Syntax'
-"NeoBundle 'digitaltoad/vim-jade'
+"NeoBundle 'Glench/Vim-Jinja2-Syntax'
+NeoBundle 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
 NeoBundle 'othree/html5.vim'
