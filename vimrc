@@ -241,7 +241,7 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --nogroup --hidden --ignore .git -g ""'
 
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
