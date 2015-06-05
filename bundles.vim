@@ -117,7 +117,8 @@ NeoBundle 'plasticboy/vim-markdown'
 " NeoBundle 'tpope/vim-endwise'
 
 "------- Go ----------
-"NeoBundle 'Blackrush/vim-gocode'
+" NeoBundle 'fatih/vim-go'
+" NeoBundle 'Blackrush/vim-gocode'
 
 "------- FPs ------
 " NeoBundle 'kien/rainbow_parentheses.vim'
