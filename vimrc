@@ -103,10 +103,9 @@ let g:ycm_key_invoke_completion = '<C-l>'
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '⚠'
 " disable diagnostics
-let g:ycm_enable_diagnostic_highlighting = 0
+" let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
 set completeopt-=preview
-let g:syntastic_warning_symbol = '>'
 let g:ycm_semantic_triggers =  {
   \   'c' : ['->', '.'],
   \   'cpp' : ['->', '.', '::'],
