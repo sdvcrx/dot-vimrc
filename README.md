@@ -43,8 +43,8 @@ Such as completions for variable names and function names(neocomplcache), expand
 
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - A fast, as-you-type, fuzzy-search code completion engine for Vim.
 * [tern](https://github.com/marijnh/tern_for_vim) - A Vim plugin that provides Tern-based JavaScript editing support.
-* [ultisnips](https://github.com/SirVer/ultisnips) - The ultimate snippet solution for Vim.
 * [emmet](http://github.com/mattn/emmet-vim) - High speed HTML and CSS coding.
+* [ultisnips](https://github.com/SirVer/ultisnips) - The ultimate snippet solution for Vim.
 * [delimitMate](https://github.com/Raimondi/delimitMate) - Provides insert mode auto-completion for quotes, parens, brackets, etc.
 
 ### Shortcuts
@@ -52,8 +52,8 @@ Such as completions for variable names and function names(neocomplcache), expand
 * `Ctrl` + `l` -> Rotate across the completion list
 * `Ctrl` + `e` -> Expand snippets or jump to the next placeholder of snippet
 * `Ctrl` + `j` -> Call zen-coding expansion on html tags
-* `jj` -> map `jj` to `<esc>`
-* `<leader>` -> map `,` to `<leader>`
+* `jj`         -> map `jj` to `<esc>`
+* `<leader>`   -> map `,` to `<leader>`
 
 ### Dependencies
 
@@ -78,7 +78,6 @@ sudo apt-get install vim-gtk               # Ubuntu
 ![Completions]()
 ![Snippets]()
 
-#### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
 
 * [matchit](http://github.com/edsono/vim-matchit) - Extended % matching for HTML, LaTeX, and many other languages.
@@ -92,18 +91,17 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Shortcuts
 
-* `%` -> Jump between brackets and html/xml tags
-* `<leader>` + `w` -> Beginning of the word.
+* `%`                         -> Jump between brackets and html/xml tags
+* `<leader>` + `w`            -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
 
-#### Doing fixes should be as fast as possible!
 ## Fast editing
 
 * [surround](http://github.com/tpope/vim-surround) - Easily delete, change and add such surroundings in pairs.
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter) - Easy commenting of code for many filetypes.
 * [Gundo](https://github.com/sjl/gundo.vim/) - visualize your Vim undo tree.
 * [tabular](https://github.com/godlygeek/tabular) - Vim script for text filtering and alignment.
-* [IndentGuides](https://github.com/nathanaelkane/vim-indent-guides) - A Vim plugin for visually displaying indent levels in code.
+* [indentLine](https://github.com/Yggdroot/indentLine) -  A vim plugin to display the indention levels with thin vertical lines .
 
 ### Tutorial
 
@@ -115,10 +113,10 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Shortcuts
 
-* `%` -> Jump between brackets and html/xml tags
+* `%`                          -> Jump between brackets and html/xml tags
+* `F3`                         -> Toggle Gundo viewer
+* `F4`                         -> Toggle Indent Guides
 * `<leader>` + `c` + `<space>` -> Toggle comment
-* `F3` -> Toggle Gundo viewer
-* `F4` -> Toggle Indent Guides
 
 ## IDE features
 
@@ -160,7 +158,7 @@ Lua          | luac          | built-in
 Perl         | perl          | built-in
 PHP          | php           | built-in
 Puppet       | puppet        | built-in
-Python       | pyflakes      | `sudo pip install pyflakes`
+Python       | pyflakes      | `pip install pyflakes`
 Ruby         | ruby          | built-in
 Scala        | scala         | built-in
 Sass         | sass          | built-in
@@ -169,14 +167,13 @@ XML          | xmllint       | built-in
 YAML         | js-yaml       | `npm install -g js-yaml`
 
 ### Shortcuts
-* `F5` -> Toggle Nerd-Tree file viewer
-* `F6` -> Toggle tagbar
-* `F8` -> Toggle syntastic
-* `Ctrl` + `p` -> Toggle ctrlp
-* `Ctrl` + `y` -> Toggle ctrlspace workspace controller
-* `Alt` + `1~9` -> Switch between multiple buffers
+* `F5`               -> Toggle Nerd-Tree file viewer
+* `F6`               -> Toggle tagbar
+* `F8`               -> Toggle syntastic
+* `Ctrl` + `p`       -> Toggle ctrlp
+* `Ctrl` + `y`       -> Toggle ctrlspace workspace controller
 * `Ctrl` + `h/j/k/l` -> Moving between spilt windows
-* `<leader>` + `a` -> Toggle CtrlSF searching
+* `<leader>` + `a`   -> Toggle CtrlSF searching
 
 ### Screenshots
 
