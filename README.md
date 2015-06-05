@@ -126,8 +126,9 @@ sudo apt-get install vim-gtk               # Ubuntu
 * [tagbar](http://github.com/majutsushi/tagbar) - Displays the tags of the current file in a sidebar.
 * [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) - An ack/ag powered code search and view tool, in an intuitive way with fairly more context.
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
+* [ctrlspace](szw/vim-ctrlspace) - A Vim plugin to control and organize your working space in Vim.
 * [airline](https://github.com/bling/vim-airline) - The ultimate vim statusline utility.
-* [fugitive](https://github.com/tpope/vim-fugitive/) - a Git wrapper so awesome, it should be illegal.
+* [fugitive](https://github.com/tpope/vim-fugitive/) - A Git wrapper so awesome, it should be illegal.
 
 ### Dependencie
 
@@ -172,6 +173,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 * `F6` -> Toggle tagbar
 * `F8` -> Toggle syntastic
 * `Ctrl` + `p` -> Toggle ctrlp
+* `Ctrl` + `y` -> Toggle ctrlspace workspace controller
 * `Alt` + `1~9` -> Switch between multiple buffers
 * `Ctrl` + `h/j/k/l` -> Moving between spilt windows
 * `<leader>` + `a` -> Toggle CtrlSF searching
