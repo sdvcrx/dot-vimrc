@@ -118,6 +118,12 @@ let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
+" JSON
+let g:vim_json_syntax_conceal = 0
+
+" JavaScript
+let g:used_javascript_libs = 'underscore,jquery'
+
 " TernJS
 autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
