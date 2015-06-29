@@ -98,6 +98,9 @@ NeoBundle 'fmoralesc/vim-pad'
 NeoBundle 'hdima/python-syntax'
 " NeoBundle 'nvie/vim-flake8'
 
+"-------- Rust --------------
+"NeoBundle 'rust-lang/rust.vim'
+
 "------- web backend ---------
 "NeoBundle '2072/PHP-Indenting-for-VIm'
 "NeoBundle 'tpope/vim-rails'
