@@ -1,7 +1,7 @@
-banbanchs's Vim config(forked from [humiaozuzu/dot-vimrc](https://github.com/humiaozuzu/dot-vimrc)
+Vim config
 ==================
 
-I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
+I use `neobundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
 
 * [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
 * [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/)
@@ -18,16 +18,16 @@ will be good for you.
 
 2. Clone and install this repo:
 
-        git clone git@bitbucket.org:banbanchs/dot-vimrc.git ~/.vim
+        git clone https://github.com/banbanchs/dot-vimrc.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
 
-3. Setup `Vundle`:
+3. Setup `NeoBundle`:
 
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
+4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins) and run:
 
-        :BundleInstall
+        :NeoBundleInstall
 
 5. Compile YouCompleteMe:
 
