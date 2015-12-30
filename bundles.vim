@@ -56,6 +56,7 @@ NeoBundle 'pocke/accelerated-smooth-scroll'
 " Fast editing
 "--------------
 NeoBundle 'tpope/vim-surround'
+" NeoBundle 'unblevable/quick-scope'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'godlygeek/tabular'
@@ -120,6 +121,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'wavded/vim-stylus'
 " NeoBundle 'nono/vim-handlebars'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'darthmall/vim-vue'
 
 "------- markup language -------
 NeoBundle 'plasticboy/vim-markdown'
