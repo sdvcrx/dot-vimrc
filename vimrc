@@ -154,7 +154,7 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:ctrlsf_ackprg = 'ag'
 
 " CtrlSpace
-let g:ctrlspace_default_mapping_key = "<C-y>"
+let g:CtrlSpaceDefaultMappingKey= "<C-y>"
 hi CtrlSpaceSelected term=reverse ctermfg=187  ctermbg=23  cterm=bold
 hi CtrlSpaceNormal   term=NONE    ctermfg=244  ctermbg=232 cterm=NONE
 hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
