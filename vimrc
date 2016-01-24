@@ -12,15 +12,6 @@ syntax on
 " fix syntax highlight off when one buffer quit
 set hidden
 
-" python highlight
-let g:python_version_2=1
-let g:python_highlight_builtins=1
-let g:python_highlight_string_formatting=1
-let g:python_highlight_string_format=1
-let g:python_highlight_string_templates=1
-let g:python_highlight_indent_errors=1
-let g:python_highlight_space_errors=1
-
 " map jj to <ESC>
 inoremap jj <ESC>
 
@@ -133,6 +124,15 @@ let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
 " JSON
 let g:vim_json_syntax_conceal = 0
+
+" python highlight
+let g:python_version_2=1
+let g:python_highlight_builtins=1
+let g:python_highlight_string_formatting=1
+let g:python_highlight_string_format=1
+let g:python_highlight_string_templates=1
+let g:python_highlight_indent_errors=1
+let g:python_highlight_space_errors=1
 
 " JavaScript
 let g:used_javascript_libs = 'underscore,jquery'
