@@ -1,5 +1,4 @@
 if has('vim_starting')
-    set nocompatible               " be iMproved
     set rtp+=~/.vim/bundle/neobundle.vim/
 endif
 
@@ -10,14 +9,16 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " install/update asynchronously in Unite interface
-NeoBundle 'Shougo/vimproc.vim', {
-        \ 'build' : {
-        \     'windows' : 'tools\\update-dll-mingw',
-        \     'cygwin' : 'make -f make_cygwin.mak',
-        \     'mac' : 'make -f make_mac.mak',
-        \     'unix' : 'make -f make_unix.mak',
-        \    },
-        \ }
+if ! has('nvim')
+    NeoBundle 'Shougo/vimproc.vim', {
+            \ 'build' : {
+            \     'windows' : 'tools\\update-dll-mingw',
+            \     'cygwin' : 'make -f make_cygwin.mak',
+            \     'mac' : 'make -f make_mac.mak',
+            \     'unix' : 'make -f make_unix.mak',
+            \    },
+            \ }
+endif
 
 
 
@@ -61,7 +62,8 @@ NeoBundle 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
-NeoBundle 'scrooloose/syntastic'
+NeoBundle 'benekastah/neomake'
+" NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'majutsushi/tagbar'

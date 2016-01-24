@@ -35,6 +35,11 @@ will be good for you.
         ./install.py --clang-completer --system-libclang --gocode-completer --system-boost --tern-completer
 
 
+### NeoVim Support ###
+
+    yaourt -S neovim python2-neovim python-neovim       # archlinux
+    ln -s ~/.vim ~/.config/nvim
+
 
 #### Most of the time we are writing code so we need: ###
 ## Code Completions ##

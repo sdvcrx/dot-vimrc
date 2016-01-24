@@ -12,15 +12,6 @@ syntax on
 " fix syntax highlight off when one buffer quit
 set hidden
 
-" python highlight
-let g:python_version_2=1
-let g:python_highlight_builtins=1
-let g:python_highlight_string_formatting=1
-let g:python_highlight_string_format=1
-let g:python_highlight_string_templates=1
-let g:python_highlight_indent_errors=1
-let g:python_highlight_space_errors=1
-
 " map jj to <ESC>
 inoremap jj <ESC>
 
@@ -44,19 +35,13 @@ au WinEnter * set cursorline nocursorcolumn
 set cursorline nocursorcolumn
 
 " search
-set incsearch
 "set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
 
 " editor settings
-set history=1000
-set nocompatible
 set nofoldenable                                                  " disable folding"
 set confirm                                                       " prompt when existing from an unsaved file
-set backspace=indent,eol,start                                    " More powerful backspacing
-set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
@@ -66,15 +51,15 @@ set showcmd                                                       " show typed c
 set title                                                         " show file in titlebar
 set visualbell                                                    " don't beep
 set noerrorbells                                                  " don't beep
-set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 "set matchpairs+=<:>                                               " specially for html
 set cino+=g0                                                      " set c++ indent style
+" set nobackup
+" set noswapfile
 autocmd FileType setlocal matchpairs+=<:>
 " set relativenumber
 
 " Default Indentation
-set autoindent
 set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
@@ -90,6 +75,25 @@ autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml,jade setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css,less,stylus setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
+
+
+"----------------------
+" NeoVim Configuration
+"----------------------
+
+" Those options are default in NeoVim already
+if ! has('nvim')
+    set incsearch
+    set nocompatible
+    set autoindent
+    set history=1000
+    set mouse=a                                                       " use mouse in all modes
+    set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
+    set laststatus=2                                                  " use 2 lines for the status bar
+    set backspace=indent,eol,start                                    " More powerful backspacing
+else
+    set nohlsearch                                                    " Disable search highlight
+endif
 
 
 "-----------------
@@ -121,26 +125,38 @@ let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 " JSON
 let g:vim_json_syntax_conceal = 0
 
+" python highlight
+let g:python_version_2=1
+let g:python_highlight_builtins=1
+let g:python_highlight_string_formatting=1
+let g:python_highlight_string_format=1
+let g:python_highlight_string_templates=1
+let g:python_highlight_indent_errors=1
+let g:python_highlight_space_errors=1
+
 " JavaScript
 let g:used_javascript_libs = 'underscore,jquery'
 
 " TernJS
-autocmd FileType javascript setlocal omnifunc=tern#Complete
-autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
+" autocmd FileType javascript setlocal omnifunc=tern#Complete
+" autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
 
 " CoffeeScript
 autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
 let coffee_indent_keep_current = 1
 
+" Neomake
+autocmd! BufWritePost * Neomake
+
 " Syntastic
-let g:syntastic_check_on_wq = 0
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
-let g:syntastic_mode_map = {
-  \ "mode": "passive",
-  \ "active_filetypes": [],
-  \ "passive_filetypes": ["javascript"]
-  \}
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_error_symbol = "✗"
+" let g:syntastic_warning_symbol = "⚠"
+" let g:syntastic_mode_map = {
+  " \ "mode": "passive",
+  " \ "active_filetypes": [],
+  " \ "passive_filetypes": ["javascript"]
+  " \}
 
 " flake8
 let g:flake8_cmd="/usr/bin/flake8-python2"
