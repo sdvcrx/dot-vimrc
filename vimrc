@@ -138,22 +138,25 @@ let g:vim_json_syntax_conceal = 0
 let g:used_javascript_libs = 'underscore,jquery'
 
 " TernJS
-autocmd FileType javascript setlocal omnifunc=tern#Complete
-autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
+" autocmd FileType javascript setlocal omnifunc=tern#Complete
+" autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
 
 " CoffeeScript
 autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
 let coffee_indent_keep_current = 1
 
+" Neomake
+autocmd! BufWritePost * Neomake
+
 " Syntastic
-let g:syntastic_check_on_wq = 0
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
-let g:syntastic_mode_map = {
-  \ "mode": "passive",
-  \ "active_filetypes": [],
-  \ "passive_filetypes": ["javascript"]
-  \}
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_error_symbol = "✗"
+" let g:syntastic_warning_symbol = "⚠"
+" let g:syntastic_mode_map = {
+  " \ "mode": "passive",
+  " \ "active_filetypes": [],
+  " \ "passive_filetypes": ["javascript"]
+  " \}
 
 " flake8
 let g:flake8_cmd="/usr/bin/flake8-python2"
