@@ -127,7 +127,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 * [nerdtree](http://github.com/scrooloose/nerdtree) - A tree explorer plugin for navigating the filesystem.
 * [tagbar](http://github.com/majutsushi/tagbar) - Displays the tags of the current file in a sidebar.
 * [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim) - An ack/ag powered code search and view tool, in an intuitive way with fairly more context.
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru and tag finder.
+* [fzf.vim](https://github.com/junegunn/fzf.vim) - A command-line fuzzy finder written in Go
 * [ctrlspace](szw/vim-ctrlspace) - A Vim plugin to control and organize your working space in Vim.
 * [airline](https://github.com/bling/vim-airline) - The ultimate vim statusline utility.
 * [fugitive](https://github.com/tpope/vim-fugitive/) - A Git wrapper so awesome, it should be illegal.
