@@ -27,14 +27,6 @@ NeoBundle 'Shougo/vimproc.vim', {
 "------------------
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'mattn/emmet-vim'
-NeoBundle 'marijnh/tern_for_vim', {
-            \ 'lazy': 1,
-            \ 'autoload': {
-            \   'filetypes': [
-            \     'javascript',
-            \   ]
-            \ }
-            \}
 "NeoBundle 'davidhalter/jedi-vim'
 
 " auto complete symbol
@@ -115,7 +107,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript']}}
 " NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
-NeoBundle 'kchmck/vim-coffee-script'
+" NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'nono/jquery.vim'
 " NeoBundle 'groenewege/vim-less'
 NeoBundle 'wavded/vim-stylus'

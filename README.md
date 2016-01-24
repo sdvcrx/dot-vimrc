@@ -32,7 +32,7 @@ will be good for you.
 5. Compile YouCompleteMe:
 
         cd ~/.vim/bundle/YouCompleteMe
-        ./install.sh --clang-completer
+        ./install.py --clang-completer --system-libclang --gocode-completer --system-boost --tern-completer
 
 
 
@@ -42,7 +42,6 @@ will be good for you.
 Such as completions for variable names and function names(neocomplcache), expanding snippets(snipMate), auto closing brackets/brace/quote(delimitMate) and fast expand expressions to HTML(emmet).
 
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - A fast, as-you-type, fuzzy-search code completion engine for Vim.
-* [tern](https://github.com/marijnh/tern_for_vim) - A Vim plugin that provides Tern-based JavaScript editing support.
 * [emmet](http://github.com/mattn/emmet-vim) - High speed HTML and CSS coding.
 * [ultisnips](https://github.com/SirVer/ultisnips) - The ultimate snippet solution for Vim.
 * [delimitMate](https://github.com/Raimondi/delimitMate) - Provides insert mode auto-completion for quotes, parens, brackets, etc.
@@ -131,7 +130,7 @@ sudo apt-get install vim-gtk               # Ubuntu
 ### Dependencie
 
 ```bash
-sudo pacman -S the_silver_searcher cmake                # ArchLinux
+sudo pacman -S the_silver_searcher cmake clang npm go   # ArchLinux
 sudo apt-get install silversearcher-ag cmake python-dev # Ubuntu
 brew install the_silver_searcher ctags                  # OS X
 ```
@@ -145,7 +144,7 @@ CPP          | clang++       | built-in
 CoffeeScript | coffee        | `npm install -g coffeelint`
 CSS          | csslint       | `npm install -g csslint`
 Erlang       | escript       | built-in
-Go           | go            | built-in
+Go           | go            | `go get -u github.com/nsf/gocode`
 Haml         | haml          | built-in
 Haskell      | ghc-mod       | `cabal install ghc-mod`
 HTML         | tidy          | built-in
