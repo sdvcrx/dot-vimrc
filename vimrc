@@ -40,7 +40,7 @@ set ignorecase
 set smartcase
 
 " editor settings
-set nofoldenable                                                  " disable folding"
+set nofoldenable                                                  " disable folding
 set confirm                                                       " prompt when existing from an unsaved file
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
@@ -148,16 +148,6 @@ let coffee_indent_keep_current = 1
 " Neomake
 autocmd! BufWritePost * Neomake
 
-" Syntastic
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_error_symbol = "✗"
-" let g:syntastic_warning_symbol = "⚠"
-" let g:syntastic_mode_map = {
-  " \ "mode": "passive",
-  " \ "active_filetypes": [],
-  " \ "passive_filetypes": ["javascript"]
-  " \}
-
 " flake8
 let g:flake8_cmd="/usr/bin/flake8-python2"
 let g:flake8_max_line_length=100
@@ -235,7 +225,6 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " nerdcommenter
 let NERDSpaceDelims=1
-" nmap <D-/> :NERDComToggleComment<cr>
 let NERDCompactSexyComs=1
 
 " emment
@@ -278,13 +267,16 @@ nnoremap <C-P> :GitFiles<CR>
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-nmap <F5> :TagbarToggle<cr>
-nmap <F6> :NERDTreeToggle<cr>
-nmap <F8> :SyntasticCheck<cr>
-nmap <F3> :GundoToggle<cr>
-nmap <F4> :IndentLinesToggle<cr>
-nmap  <D-/> :
+nmap <F3> :GundoToggle<CR>
+nmap <F4> :IndentLinesToggle<CR>
+nmap <F5> :TagbarToggle<CR>
+nmap <F6> :NERDTreeToggle<CR>
+" nmap <F7>
+nmap <F8> :Neomake<CR>
+
+" Search something
 nnoremap <leader>a :CtrlSF 
+" Select all lines
 nnoremap <leader>v V`]
 
 "------------------
@@ -310,12 +302,6 @@ cmap w!! %!sudo tee >/dev/null %
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
-" sublime key bindings
-nmap <D-]> >>
-nmap <D-[> <<
-vmap <D-[> <gv
-vmap <D-]> >gv
 
 " eggcache vim
 nnoremap ; :
@@ -345,16 +331,4 @@ if has("gui_running")
     set showtabline=2
     set columns=93
     set lines=21
-    noremap <D-M-Left> :tabprevious<cr>
-    noremap <D-M-Right> :tabnext<cr>
-    map <D-1> 1gt
-    map <D-2> 2gt
-    map <D-3> 3gt
-    map <D-4> 4gt
-    map <D-5> 5gt
-    map <D-6> 6gt
-    map <D-7> 7gt
-    map <D-8> 8gt
-    map <D-9> 9gt
-    map <D-0> :tablast<CR>
 endif
