@@ -167,6 +167,12 @@ hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
 hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
 " ctrlspace require
 let g:airline_exclude_preview = 1
+" Turn off tabline
+set showtabline=0
+" use ag to accelerate the speed
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
 
 " man.vim
 source $VIMRUNTIME/ftplugin/man.vim
@@ -328,7 +334,6 @@ if has("gui_running")
     elseif has("gui_win32")
         set guifont=Consolas:h11:cANSI
     endif
-    set showtabline=2
     set columns=93
     set lines=21
 endif
