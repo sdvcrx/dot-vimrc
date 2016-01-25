@@ -83,6 +83,7 @@ NeoBundle 'shougo/unite.vim'
 NeoBundle 'vim-scripts/fcitx.vim'
 NeoBundle 'nvie/vim-togglemouse'
 NeoBundle 'szw/vim-ctrlspace'
+" NeoBundle 'junegunn/goyo.vim'
 NeoBundle 'fmoralesc/vim-pad'
 
 "----------------------------------------
