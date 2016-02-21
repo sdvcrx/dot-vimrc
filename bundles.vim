@@ -108,9 +108,9 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'othree/html5.vim'
 " NeoBundle 'tpope/vim-haml'
 " NeoBundle 'pangloss/vim-javascript'
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+" NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript']}}
-" NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
+NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript']}}
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'nono/jquery.vim'
 " NeoBundle 'groenewege/vim-less'
