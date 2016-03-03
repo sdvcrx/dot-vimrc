@@ -94,8 +94,9 @@ if ! has('nvim')
 else
     set nohlsearch                                                    " Disable search highlight
 
-    " Use true colors
-    " https://github.com/neovim/neovim/wiki/FAQ#how-can-i-use-true-colors-in-the-terminal
+    " Learn More
+    " - https://gist.github.com/XVilka/8346728
+    " - https://github.com/neovim/neovim/wiki/FAQ#how-can-i-use-true-colors-in-the-terminal
     :let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
