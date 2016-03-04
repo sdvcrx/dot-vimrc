@@ -1,27 +1,4 @@
-if has('vim_starting')
-    set rtp+=~/.vim/bundle/neobundle.vim/
-endif
-
-
 call plug#begin(expand('~/.vim/bundle/'))
-
-" let NeoBundle manage NeoBundle
-" required!
-" NeoBundleFetch 'Shougo/neobundle.vim'
-
-" install/update asynchronously in Unite interface
-" if ! has('nvim')
-    " NeoBundle 'Shougo/vimproc.vim', {
-            " \ 'build' : {
-            " \     'windows' : 'tools\\update-dll-mingw',
-            " \     'cygwin' : 'make -f make_cygwin.mak',
-            " \     'mac' : 'make -f make_mac.mak',
-            " \     'unix' : 'make -f make_unix.mak',
-            " \    },
-            " \ }
-" endif
-
-
 
 
 "------------------
@@ -52,7 +29,7 @@ Plug 'pocke/accelerated-smooth-scroll'
 Plug 'tpope/vim-surround'
 " Plug 'unblevable/quick-scope'
 Plug 'scrooloose/nerdcommenter'
-Plug 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
 Plug 'godlygeek/tabular'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-scripts/argtextobj.vim'
@@ -63,20 +40,17 @@ Plug 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
-Plug 'benekastah/neomake'
+Plug 'benekastah/neomake', { 'on': 'Neomake' }
 " Plug 'scrooloose/syntastic'
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " Plug 'gabesoft/vim-ags'
 " Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'shougo/unite.vim'
 
 
 "-------------
@@ -108,14 +82,12 @@ Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 "------- web frontend ----------
 Plug 'othree/html5.vim', { 'for': 'html' }
 " Plug 'tpope/vim-haml'
-" Plug 'pangloss/vim-javascript'
-" Plug 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'nono/jquery.vim'
 " Plug 'groenewege/vim-less'
-Plug 'wavded/vim-stylus'
+" Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 " Plug 'nono/vim-handlebars'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'darthmall/vim-vue', { 'for': 'vue' }
@@ -129,8 +101,8 @@ Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 " Plug 'tpope/vim-endwise'
 
 "------- Go ----------
-" Plug 'fatih/vim-go'
-" Plug 'Blackrush/vim-gocode'
+" Plug 'fatih/vim-go', { 'for': 'go' }
+" Plug 'Blackrush/vim-gocode', { 'for': 'go' }
 
 "------- FPs ------
 " Plug 'kien/rainbow_parentheses.vim'
