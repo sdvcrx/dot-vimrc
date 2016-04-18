@@ -110,6 +110,9 @@ Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 " Plug 'vim-scripts/VimClojure'
 " Plug 'rosstimson/scala-vim-support'
 
+"------ ansible-vim ----
+Plug 'pearofducks/ansible-vim'
+
 "--------------
 " Color Schemes
 "--------------
