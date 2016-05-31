@@ -89,6 +89,7 @@ Plug 'othree/yajs.vim', { 'for': 'javascript' }
 " Plug 'groenewege/vim-less'
 " Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 " Plug 'nono/vim-handlebars'
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'darthmall/vim-vue', { 'for': 'vue' }
 
