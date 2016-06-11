@@ -82,8 +82,9 @@ Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 "------- web frontend ----------
 Plug 'othree/html5.vim', { 'for': 'html' }
 " Plug 'tpope/vim-haml'
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
+" Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
+" Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'nono/jquery.vim'
 " Plug 'groenewege/vim-less'
@@ -92,6 +93,7 @@ Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'darthmall/vim-vue', { 'for': 'vue' }
+" Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 
 "------- markup language -------
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
