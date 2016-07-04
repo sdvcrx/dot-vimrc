@@ -111,6 +111,7 @@ nnoremap <leader>jd :YcmCompleter GoTo<CR>
 let g:ycm_key_invoke_completion = '<C-l>'
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '⚠'
+let g:ycm_python_binary_path = 'python'
 " disable diagnostics
 " let g:ycm_enable_diagnostic_highlighting = 0
 " disable document
