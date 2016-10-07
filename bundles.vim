@@ -77,7 +77,7 @@ Plug 'hdima/python-syntax', { 'for': 'python' }
 "Plug '2072/PHP-Indenting-for-VIm'
 "Plug 'tpope/vim-rails'
 "Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
+Plug 'digitaltoad/vim-pug', { 'for': 'jade' }
 
 "------- web frontend ----------
 Plug 'othree/html5.vim', { 'for': 'html' }
