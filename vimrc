@@ -274,7 +274,7 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 
 " FZF
-nnoremap <C-P> :GitFiles<CR>
+nnoremap <C-P> :Files<CR>
 
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
