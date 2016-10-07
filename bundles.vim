@@ -47,6 +47,7 @@ Plug 'terryma/vim-multiple-cursors'
 " IDE features
 "--------------
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
+Plug 'benjie/neomake-local-eslint.vim', { 'for': 'javascript' }
 " Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
