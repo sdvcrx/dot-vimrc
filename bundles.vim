@@ -4,9 +4,15 @@ call plug#begin(expand('~/.vim/bundle/'))
 "------------------
 " Code Completions
 "------------------
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'mattn/emmet-vim'
 "Plug 'davidhalter/jedi-vim'
+
+" deoplete
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript' }
+" Plug 'zchee/deoplete-go', { 'for': 'go' }
 
 " auto complete symbol
 Plug 'Raimondi/delimitMate'

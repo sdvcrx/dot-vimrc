@@ -123,6 +123,13 @@ let g:ycm_semantic_triggers =  {
   \   'vim' : ['re![_a-zA-Z]+[_\w]*\.'],
   \}
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
+" File source complete the files from the buffer path, see more discussion:
+" - https://github.com/Shougo/deoplete.nvim/issues/109
+" - https://github.com/Shougo/deoplete.nvim/blob/master/doc/deoplete.txt#L314
+let g:deoplete#file#enable_buffer_path = 1
+
 " ultisnips
 let g:UltiSnipsExpandTrigger='<C-e>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
