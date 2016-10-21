@@ -170,7 +170,7 @@ let g:flake8_ignore="E501"
 let g:EasyMotion_leader_key = '<Leader>'
 
 " ctrlsf
-let g:ctrlsf_ackprg = 'ag'
+let g:ctrlsf_ackprg = 'rg'
 
 " CtrlSpace
 let g:CtrlSpaceDefaultMappingKey= "<Space>"
