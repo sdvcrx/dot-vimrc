@@ -158,6 +158,10 @@ let g:used_javascript_libs = 'underscore,jquery'
 autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
 let coffee_indent_keep_current = 1
 
+" Rust
+" For archlinux: yaourt -S rust-src
+let $RUST_SRC_PATH='/usr/src/rust/src/'
+
 " Neomake
 autocmd! BufWritePost * Neomake
 
