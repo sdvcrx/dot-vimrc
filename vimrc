@@ -191,6 +191,9 @@ endif
 source $VIMRUNTIME/ftplugin/man.vim
 nmap <Leader>man :Man 3 
 
+" vim-matchit
+source $VIMRUNTIME/macros/matchit.vim
+
 " delimitMate
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1

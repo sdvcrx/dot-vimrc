@@ -25,7 +25,6 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 "-----------------
 " Fast navigation
 "-----------------
-Plug 'edsono/vim-matchit'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'pocke/accelerated-smooth-scroll'
 
