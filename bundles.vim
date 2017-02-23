@@ -103,6 +103,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'darthmall/vim-vue', { 'for': 'vue' }
 " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
 "------- markup language -------
 Plug 'plasticboy/vim-markdown', { 'for': 'md' }
