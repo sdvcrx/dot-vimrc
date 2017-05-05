@@ -40,6 +40,7 @@ set ignorecase
 set smartcase
 
 " editor settings
+set mouse=a                                                       " use mouse in all modes
 set nofoldenable                                                  " disable folding
 set confirm                                                       " prompt when existing from an unsaved file
 set report=0                                                      " always report number of lines changed                "
@@ -87,7 +88,6 @@ if ! has('nvim')
     set nocompatible
     set autoindent
     set history=1000
-    set mouse=a                                                       " use mouse in all modes
     set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
     set laststatus=2                                                  " use 2 lines for the status bar
     set backspace=indent,eol,start                                    " More powerful backspacing
