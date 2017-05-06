@@ -75,6 +75,7 @@ Plug 'fmoralesc/vim-pad'
 
 "-------- python -----------
 Plug 'hdima/python-syntax', { 'for': 'python' }
+Plug 'Vimjas/vim-python-pep8-indent', { 'for': 'python' }
 " Plug 'nvie/vim-flake8', { 'for': 'python' }
 
 "-------- Rust --------------
