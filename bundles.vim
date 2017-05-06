@@ -78,9 +78,9 @@ Plug 'hdima/python-syntax', { 'for': 'python' }
 " Plug 'nvie/vim-flake8', { 'for': 'python' }
 
 "-------- Rust --------------
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'racer-rust/vim-racer', { 'for': 'rust' }
-Plug 'cespare/vim-toml', { 'for': 'toml' }
+" Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+" Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+" Plug 'cespare/vim-toml', { 'for': 'toml' }
 
 "------- web backend ---------
 "Plug '2072/PHP-Indenting-for-VIm'
