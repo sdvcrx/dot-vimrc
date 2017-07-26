@@ -18,7 +18,7 @@ will be good for you.
 
 2. Clone and install this repo:
 
-        git clone https://github.com/banbanchs/dot-vimrc.git ~/.vim
+        git clone https://github.com/silentvoyage/dot-vimrc.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
 
 3. Setup `NeoBundle`:
