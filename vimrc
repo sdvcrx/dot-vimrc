@@ -193,7 +193,6 @@ if executable("ag")
 endif
 
 " man.vim
-source $VIMRUNTIME/ftplugin/man.vim
 nmap <Leader>man :Man 3 
 
 " vim-matchit
