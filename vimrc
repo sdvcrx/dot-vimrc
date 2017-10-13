@@ -129,6 +129,7 @@ let g:deoplete#enable_at_startup = 1
 " - https://github.com/Shougo/deoplete.nvim/issues/109
 " - https://github.com/Shougo/deoplete.nvim/blob/master/doc/deoplete.txt#L314
 let g:deoplete#file#enable_buffer_path = 1
+let g:deoplete#sources#jedi#python_path = '/usr/bin/python3'
 
 " ultisnips
 let g:UltiSnipsExpandTrigger='<C-e>'
@@ -139,7 +140,7 @@ let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 let g:vim_json_syntax_conceal = 0
 
 " python highlight
-let g:python_version_2=1
+" let g:python_version_2=1
 let g:python_highlight_builtins=1
 let g:python_highlight_string_formatting=1
 let g:python_highlight_string_format=1
@@ -166,7 +167,7 @@ let $RUST_SRC_PATH='/usr/src/rust/src/'
 autocmd! BufWritePost * Neomake
 
 " flake8
-let g:flake8_cmd="/usr/bin/flake8-python2"
+let g:flake8_cmd="/usr/bin/flake8"
 let g:flake8_max_line_length=100
 let g:flake8_ignore="E501"
 
