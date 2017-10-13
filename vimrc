@@ -284,6 +284,9 @@ if has('conceal')
     set conceallevel=2 concealcursor=i
 endif
 
+" editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
