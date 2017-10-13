@@ -21,6 +21,7 @@ let g:mapleader = ','
 "--------
 " Vim UI
 "--------
+set termguicolors
 " color scheme
 set background=dark
 " color vividchalk
@@ -97,7 +98,6 @@ else
     " Use true colors
     " https://github.com/neovim/neovim/wiki/FAQ#how-can-i-use-true-colors-in-the-terminal
     :let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
 
 
