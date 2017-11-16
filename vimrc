@@ -105,6 +105,9 @@ endif
 " Plugin settings
 "-----------------
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 nnoremap <leader>jd :YcmCompleter GoTo<CR>

@@ -9,7 +9,13 @@ Plug 'mattn/emmet-vim'
 "Plug 'davidhalter/jedi-vim'
 
 " deoplete
-Plug 'Shougo/deoplete.nvim'
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript' }
 " Plug 'zchee/deoplete-go', { 'for': 'go' }
