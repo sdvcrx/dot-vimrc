@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-vetur": ">=1.1.2",
+    "coc-json": ">=1.2.2",
+    "coc-snippets": ">=2.1.4",
+    "coc-tsserver": ">=1.3.12",
+    "coc-eslint": ">=1.2.1"
+  }
+}

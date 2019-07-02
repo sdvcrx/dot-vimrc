@@ -105,39 +105,30 @@ endif
 " Plugin settings
 "-----------------
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
+" =coc.vim=
+"
+" coc-snippets
+" Use <C-l> for trigger snippet expand.
+imap <C-e> <Plug>(coc-snippets-expand)
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
 
-" YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '/home/memory/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-nnoremap <leader>jd :YcmCompleter GoTo<CR>
-let g:ycm_key_invoke_completion = '<C-l>'
-let g:ycm_error_symbol = '✗'
-let g:ycm_warning_symbol = '⚠'
-let g:ycm_python_binary_path = 'python'
-" disable diagnostics
-" let g:ycm_enable_diagnostic_highlighting = 0
-" disable document
-set completeopt-=preview
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'cpp' : ['->', '.', '::'],
-  \   'javascript,coffee,python,go' : ['.'],
-  \   'vim' : ['re![_a-zA-Z]+[_\w]*\.'],
-  \}
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-" File source complete the files from the buffer path, see more discussion:
-" - https://github.com/Shougo/deoplete.nvim/issues/109
-" - https://github.com/Shougo/deoplete.nvim/blob/master/doc/deoplete.txt#L314
-let g:deoplete#file#enable_buffer_path = 1
-let g:deoplete#sources#jedi#python_path = '/usr/bin/python3'
+" ALE
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '•'
+let g:ale_sign_warning = '•'
+hi link ALEErrorSign    Error
+hi link ALEWarningSign  Warning
 
-" ultisnips
-let g:UltiSnipsExpandTrigger='<C-e>'
-let g:UltiSnipsJumpForwardTrigger='<C-j>'
-let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
 " JSON
 let g:vim_json_syntax_conceal = 0
@@ -150,29 +141,6 @@ let g:python_highlight_string_format=1
 let g:python_highlight_string_templates=1
 let g:python_highlight_indent_errors=1
 let g:python_highlight_space_errors=1
-
-" JavaScript
-let g:used_javascript_libs = 'underscore,jquery'
-
-" TernJS
-" autocmd FileType javascript setlocal omnifunc=tern#Complete
-" autocmd FileType javascript nnoremap <leader>jd :TernDef<CR>
-
-" CoffeeScript
-autocmd FileType coffee nmap <C-c> :CoffeeWatch<CR>
-let coffee_indent_keep_current = 1
-
-" Rust
-" For archlinux: yaourt -S rust-src
-let $RUST_SRC_PATH='/usr/src/rust/src/'
-
-" Neomake
-autocmd! BufWritePost * Neomake
-
-" flake8
-let g:flake8_cmd="/usr/bin/flake8"
-let g:flake8_max_line_length=100
-let g:flake8_ignore="E501"
 
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
@@ -215,30 +183,6 @@ let g:tagbar_width=30
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
-" tag for coffee
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-
-  let g:tagbar_type_markdown = {
-    \ 'ctagstype' : 'markdown',
-    \ 'sort' : 0,
-    \ 'kinds' : [
-        \ 'h:sections'
-    \ ]
-    \ }
-endif
 
 " Nerd Tree
 let NERDChristmasTree=0
@@ -264,11 +208,6 @@ autocmd FileType html,css,jinja,vue EmmetInstall
 
 " vim-pad
 let g:pad#dir = '~/.vim/notes'
-
-" riv
-" let g:riv_auto_rst2html = 1
-" let proj1 = { 'path': '~/Dropbox/Documents/rst/', }
-" let g:riv_projects = [proj1]
 
 " markdown
 " Highlight YAML frontmatter as used by Jekyll
@@ -304,7 +243,7 @@ nmap <F4> :IndentLinesToggle<CR>
 nmap <F5> :TagbarToggle<CR>
 nmap <F6> :NERDTreeToggle<CR>
 " nmap <F7>
-nmap <F8> :Neomake<CR>
+nmap <F8> :ALEToggle<CR>
 
 " Search something
 nnoremap <leader>a :CtrlSF 

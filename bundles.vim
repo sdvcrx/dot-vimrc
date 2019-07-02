@@ -4,29 +4,17 @@ call plug#begin(expand('~/.vim/bundle/'))
 "------------------
 " Code Completions
 "------------------
-" Plug 'Valloric/YouCompleteMe'
 Plug 'mattn/emmet-vim'
-"Plug 'davidhalter/jedi-vim'
 
-" deoplete
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'zchee/deoplete-jedi', { 'for': 'python' }
-Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript' }
-" Plug 'zchee/deoplete-go', { 'for': 'go' }
+" coc.vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" code snippets (coc-snippets)
+Plug 'honza/vim-snippets'
 
 " auto complete symbol
 Plug 'Raimondi/delimitMate'
 "Plug 'jiangmiao/auto-pairs'
-
-" code snippets
-" Group dependencies, vim-snippets depends on ultisnips
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 "-----------------
 " Fast navigation
@@ -51,9 +39,8 @@ Plug 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
-Plug 'benekastah/neomake', { 'on': 'Neomake' }
-Plug 'benjie/neomake-local-eslint.vim', { 'for': 'javascript' }
-" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
+
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
 Plug 'dyng/ctrlsf.vim'
