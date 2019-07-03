@@ -48,7 +48,11 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " Plug 'gabesoft/vim-ags'
 " Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+
+" statusline
+" Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+Plug 'liuchengxu/eleline.vim'
+
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 
