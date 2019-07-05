@@ -50,10 +50,10 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'dyng/ctrlsf.vim'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'on': 'Files' }
+Plug 'junegunn/fzf.vim', { 'on': 'Files' }
 " Plug 'gabesoft/vim-ags'
 " Plug 'tpope/vim-fugitive'
 
