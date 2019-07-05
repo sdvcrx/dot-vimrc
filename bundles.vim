@@ -41,7 +41,15 @@ Plug 'terryma/vim-multiple-cursors'
 "--------------
 Plug 'w0rp/ale'
 
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | Plug 'jistr/vim-nerdtree-tabs'
+" defx
+if has('nvim')
+  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' } | Plug 'kristijanhusak/defx-icons'
+else
+  Plug 'Shougo/defx.nvim' | Plug 'kristijanhusak/defx-icons'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
 Plug 'majutsushi/tagbar'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf'
