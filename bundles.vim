@@ -86,7 +86,7 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': 'python' }
 "-------- Rust --------------
 " Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 " Plug 'racer-rust/vim-racer', { 'for': 'rust' }
-" Plug 'cespare/vim-toml', { 'for': 'toml' }
+Plug 'cespare/vim-toml', { 'for': 'toml' }
 
 "------- web backend ---------
 "Plug '2072/PHP-Indenting-for-VIm'
@@ -120,8 +120,7 @@ Plug 'plasticboy/vim-markdown', { 'for': 'md' }
 " Plug 'tpope/vim-endwise'
 
 "------- Go ----------
-" Plug 'fatih/vim-go', { 'for': 'go' }
-" Plug 'Blackrush/vim-gocode', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 
 "------- FPs ------
 " Plug 'kien/rainbow_parentheses.vim'
