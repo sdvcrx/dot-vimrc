@@ -129,6 +129,13 @@ let g:ale_sign_warning = '•'
 hi link ALEErrorSign    Error
 hi link ALEWarningSign  Warning
 
+" =vim-go=
+"
+" Disable vim-go code completion (using coc.vim)
+autocmd FileType go let b:coc_root_patterns = ['go.mod']
+let g:go_code_completion_enabled = 1
+" https://github.com/dense-analysis/ale/issues/609
+let g:go_fmt_fail_silently = 1
 
 " JSON
 let g:vim_json_syntax_conceal = 0
