@@ -131,6 +131,12 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 "------ ansible-vim ----
 Plug 'pearofducks/ansible-vim'
 
+"------ plantuml ----
+" Plug 'aklt/plantuml-syntax'
+
+"------ dockerfile ----
+Plug 'ekalinin/Dockerfile.vim'
+
 "--------------
 " Color Schemes
 "--------------
