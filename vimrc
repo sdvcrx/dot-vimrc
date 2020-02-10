@@ -386,23 +386,3 @@ nnoremap ; :
 :command Q q
 :command Qa qa
 :command QA qa
-
-" for gvim
-if has("gui_running")
-    set go=aAce  " remove toolbar
-    " set go=aAcem
-
-    " GVIM theme
-    color solarized
-    set bg=light
-    let g:airline_theme='solarized'
-
-    "set transparency=30
-    if has("gui_gtk2")
-        set guifont=YaHei\ Consolas\ Hybrid\ 11
-    elseif has("gui_win32")
-        set guifont=Consolas:h11:cANSI
-    endif
-    set columns=93
-    set lines=21
-endif
