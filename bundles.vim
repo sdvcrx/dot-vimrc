@@ -68,9 +68,9 @@ Plug 'editorconfig/editorconfig-vim'
 "-------------
 " Other Utils
 "-------------
-Plug 'vim-scripts/fcitx.vim'
+Plug 'lilydjwg/fcitx.vim'
 Plug 'nvie/vim-togglemouse'
-Plug 'szw/vim-ctrlspace'
+"Plug 'szw/vim-ctrlspace'
 " Plug 'junegunn/goyo.vim'
 Plug 'fmoralesc/vim-pad'
 
