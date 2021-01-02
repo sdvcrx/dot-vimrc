@@ -40,15 +40,7 @@ Plug 'terryma/vim-multiple-cursors'
 " IDE features
 "--------------
 Plug 'neomake/neomake'
-
-" defx
-if has('nvim')
-  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' } | Plug 'kristijanhusak/defx-icons'
-else
-  Plug 'Shougo/defx.nvim' | Plug 'kristijanhusak/defx-icons'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+Plug 'preservim/nerdtree'
 
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'dyng/ctrlsf.vim'
