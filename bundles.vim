@@ -39,7 +39,7 @@ Plug 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
-Plug 'w0rp/ale'
+Plug 'neomake/neomake'
 
 " defx
 if has('nvim')
@@ -58,8 +58,7 @@ Plug 'junegunn/fzf.vim'
 " Plug 'tpope/vim-fugitive'
 
 " statusline
-" Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
-Plug 'liuchengxu/eleline.vim'
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'editorconfig/editorconfig-vim'
