@@ -27,7 +27,7 @@ set background=dark
 " color vividchalk
 " color molokai
 let g:seoul256_background = 234
-color seoul256
+color onedark
 let g:rehash256 = 1
 
 " highlight current line
@@ -321,7 +321,7 @@ let g:vim_markdown_frontmatter=1
 "let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='powerlineish'
-let g:airline_theme='wombat'
+let g:airline_theme='onedark'
 let g:airline#extensions#whitespace#enabled = 0
 
 " For snippet_complete marker.

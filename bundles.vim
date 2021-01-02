@@ -140,6 +140,7 @@ Plug 'ekalinin/Dockerfile.vim'
 "--------------
 " Color Schemes
 "--------------
+Plug 'joshdick/onedark.vim'
 Plug 'rickharris/vim-blackboard'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
