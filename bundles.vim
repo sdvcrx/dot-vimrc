@@ -47,6 +47,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " Plug 'gabesoft/vim-ags'
+Plug 'airblade/vim-gitgutter'
 " Plug 'tpope/vim-fugitive'
 
 " statusline
