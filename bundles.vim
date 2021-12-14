@@ -39,6 +39,10 @@ Plug 'terryma/vim-multiple-cursors'
 "--------------
 " IDE features
 "--------------
+" telescope.vim
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 Plug 'neomake/neomake'
 Plug 'preservim/nerdtree'
 
